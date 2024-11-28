@@ -1,35 +1,16 @@
 ---
-title: "Ramon Melser"
-image: media/file.png
-about:
-  template: trestles
-  image-shape: round
-  image-width: 20em
-  links: 
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/ramon-melser-666932129/
-    - icon: twitter
-      text: Twitter/X
-      href: https://x.com/MelserRamon
-    - icon: github
-      text: GitHub
-      href: https://github.com/ramonmelser
-    - icon: envelope-at
-      text: Email
-      href: mailto:melser@student.ubc.ca
+title: "FCOR 599: Workshop Artifacts"
+subtitle: "A compilation of tips, tricks and guides for advanced geomatics"
+authors:
+  - name: The FCOR 599 Teaching Team
+    
+date: 2024-11-28
+date-modified: 2024-11-28
+license: "CC BY"
 ---
+
+**Home Page**
 
 Hey there,
 
-I'm a PhD Candidate in the Department of Forest Resources Management, Faculty of Forestry at the University of British Columbia. My supervisor is Dr. Nicholas Coops, who runs the Integrated Remote Sensing Studio ([IRSS](https://irsslab.forestry.ubc.ca/)).
-
-My current research is funded by the Canadian Space Agency, and explores the use of multi-source remote sensing modelling frameworks for the estimation of Gross Primary Productivity (GPP) across the Canadian boreal zone. Particularly, my work investigates linkages between core drivers of GPP across land cover types and disturbance histories. Through this work, I aim to provide comprehensive insights into carbon dynamics across the complex Canadian landscape, and offer insight into likely future GPP dynamics under changing climates.
-
-As a graduate student in the Faculty of Forestry, I am also involved in a variety of Teaching Assistant & Support roles. To date, I have served as a Teaching Assistant in 10+ courses, supporting both undergraduate and graduate courses.
-
-When I am not in the lab, you can find me at a local pool, or cooking up a storm for a dinner party. I also enjoy music, and like to go to concerts.
-
-I look forward to adding more content to this website as my academic career progresses, so be sure to check back soon!
-
--Ramon
+This webpage contains workshop artifacts created by your FCOR 599 TA's. Many of these artifacts were initially developed as workshops, and have been archived here for your reference. The topics range from cartography to advanced figure development and python scripting - most of which were requested by previous cohorts of your peers. If you have any questions, or have suggestions for additional modules that can be included here, please talk to your FCOR 599 teaching team.

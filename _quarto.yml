@@ -1,19 +1,21 @@
 project:
   type: website
-  output-dir: D:/Sync/Bookdown/personal_page
+  output-dir: C:/Users/melser/Documents/GitHub/FCOR-599-Workshops
 
 website:
-  title: "Ramon Melser: E-Portfolio"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: resume.qmd
-        text: Resume
-      - href: publications.qmd
-        text: Publications
-      - href: content_development.qmd
-        text: Content Development
+  title: "FCOR 599: Workshop Artifacts"
+  sidebar:
+    logo: images/MGEM_logo.png
+    style: "docked"
+    search: true
+    contents:
+      - text: "Home"
+        href: index.qmd
+      - section: "Cartography"
+        href: cartography.qmd
+        contents:
+          - art_of_maps.qmd
+          - arcgis_pro_demo.qmd
 
 format:
   html:
