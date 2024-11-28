@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: D:/Sync/Bookdown/personal_page
+
+website:
+  title: "Ramon Melser: E-Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: resume.qmd
+        text: Resume
+      - href: publications.qmd
+        text: Publications
+      - href: content_development.qmd
+        text: Content Development
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+editor: visual
+
