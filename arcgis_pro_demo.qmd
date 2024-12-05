@@ -2,4 +2,5 @@
 title: "ArcGIS Pro Demo"
 ---
 
-Insert a demo here that goes through the steps involved in making a beautiful map in ArcGIS Pro. 
+As MGEM students, you all have access to ArcGIS Pro, a powerful GIS software that allows users to perform geospatial tasks and create beautiful maps. This demo focuses on the map-making capabilities of ArcGIS Pro, and provides an easy reference guide for the implementation of core cartography concepts and best-practices. 
+

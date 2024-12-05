@@ -1,0 +1,8 @@
+---
+title: "Interactive Maps"
+authors:
+  - name: Ramon Melser
+    degrees: MGEM
+---
+
+Although conventional maps are static and do not allow for user interaction, geospatial practitioners have developed exciting new ways in which we can present geographic information in interactive formats. Although not exhaustive by any means, this section will cover several key ways in which you can create digital maps that allow for user-interaction. 

@@ -16,6 +16,10 @@ website:
         contents:
           - art_of_maps.qmd
           - arcgis_pro_demo.qmd
+      - section: "Interactive Maps"
+        href: interactive_maps.qmd
+        contents: 
+          - leaflet.qmd
 
 format:
   html:
