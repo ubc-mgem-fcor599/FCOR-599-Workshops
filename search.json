@@ -81,5 +81,68 @@
       "Interactive Maps",
       "Leaflet"
     ]
+  },
+  {
+    "objectID": "Landing_Page/index.html",
+    "href": "Landing_Page/index.html",
+    "title": "FCOR 599: Workshop Artifacts",
+    "section": "",
+    "text": "Home Page\nHey there,\nThis webpage contains workshop artifacts created by your FCOR 599 TA’s. Many of these artifacts were initially developed as workshops, and have been archived here for your reference. The topics range from cartography to advanced figure development and python scripting - most of which were requested by previous cohorts of your peers. If you have any questions, or have suggestions for additional modules that can be included here, please talk to your FCOR 599 teaching team.\n\n\n\nReuseCC BY 4.0",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "Cartography/arcgis_pro_demo.html",
+    "href": "Cartography/arcgis_pro_demo.html",
+    "title": "ArcGIS Pro Demo",
+    "section": "",
+    "text": "As MGEM students, you all have access to ArcGIS Pro, a powerful GIS software that allows users to perform geospatial tasks and create beautiful maps. This demo focuses on the map-making capabilities of ArcGIS Pro, and provides an easy reference guide for the implementation of core cartography concepts and best-practices.",
+    "crumbs": [
+      "Cartography",
+      "ArcGIS Pro Demo"
+    ]
+  },
+  {
+    "objectID": "Cartography/art_of_maps.html",
+    "href": "Cartography/art_of_maps.html",
+    "title": "The Art of Map Making",
+    "section": "",
+    "text": "Lets add some text here about the history of maps. Some are very beautiful, some less so. Although we rightfully place emphasis on ensuring the scientific integrity of maps, the artistic component of map making is a key component of science communication, and should not be overlooked.",
+    "crumbs": [
+      "Cartography",
+      "The Art of Map Making"
+    ]
+  },
+  {
+    "objectID": "Cartography/cartography.html",
+    "href": "Cartography/cartography.html",
+    "title": "Cartography",
+    "section": "",
+    "text": "“All maps are lies, but some are useful” ~ Dr. Paul Pickell, circa 2020\nCartography is the art and science of creating, studying, and distributing maps and other visual representations of geographical areas. It involves a combination of scientific and artistic skills to communicate information about a place.\n\n\n\nEratosthenes’ World Map (220 BCE) showing the results of Alexander the Great’s conquests. Eratosthenes was the first geographer to include parallels and meridians in his maps, allowing for the calculation of distance.",
+    "crumbs": [
+      "Cartography"
+    ]
+  },
+  {
+    "objectID": "Interactive_Maps/interactive_maps.html",
+    "href": "Interactive_Maps/interactive_maps.html",
+    "title": "Interactive Maps",
+    "section": "",
+    "text": "Although conventional maps are static and do not allow for user interaction, geospatial practitioners have developed exciting new ways in which we can present geographic information in interactive formats. Although not exhaustive by any means, this section will cover several key ways in which you can create digital maps that allow for user-interaction.",
+    "crumbs": [
+      "Interactive Maps"
+    ]
+  },
+  {
+    "objectID": "Interactive_Maps/leaflet.html",
+    "href": "Interactive_Maps/leaflet.html",
+    "title": "Leaflet",
+    "section": "",
+    "text": "The Basics:\nMany software and coding packages can be used to create interactive maps. In this particular demo, we will show you an easy way to produce interactive maps in leaflet - a popular R package. Leaflet is intuitive, fast, and has many arguments that allow us to easily adjust the way in which we present our maps. In the example below, we used NTEMs land cover from 2020 to product a simple interactive map for Vancouver Island. In the code below, you will notice that we add in a basemap using the ‘addProviderTiles’ argument. You can browse for available leaflet basemaps here: https://leaflet-extras.github.io/leaflet-providers/preview/\n\nl &lt;- leaflet(width = 600, height = 600)%&gt;%\n  \n  #lets use some base imagery from ESRI\n  addProviderTiles(\"Esri.WorldImagery\") %&gt;%\n  \n  #now lets add our NTEMS land cover from 2020\n  addRasterImage(ntems2020, \n                 #you can increase the allowable size of the rast here\n                 maxBytes = 10 * 1024 *1024) %&gt;%\n  #add a legend\n  addRasterLegend(ntems2020, opacity = 1)%&gt;%\n  #add scale bar\n  addScaleBar(position = c(\"bottomleft\"))\n\n\n\n\n\n\n\n \nComparing/Showing Multiple Layers:\nNow let’s step things up a notch, and add some additional content to our map. For the purposes of this demonstration, let’s say you have been tasked with showcasing changes in land cover on Vancouver Island from 2000 to 2020. To do so, we can use 2 key leaflet functionalities: 1) adding a toggle menu - allowing us to switch between layers, 2) adding a ‘slider’, which we can use to visualize two layers side-by-side.\n1) In order to add a toggle menu and provide NTEMs land cover of both 2000 and 2020 in our map, we do need to provide a name for our layers using the ‘group’ argument within the ‘addRasterImage’ function.\n\nl2 &lt;- leaflet(width = 600, height = 600)%&gt;%\n  \n  #lets use some base imagery from ESRI\n  addProviderTiles(\"Esri.WorldImagery\") %&gt;%\n  \n  #now lets add our NTEMS land cover from 2000\n  addRasterImage(ntems2000, \n                 #you can increase the allowable size of the rast here\n                 maxBytes = 10 * 1024 *1024,\n                 #provide a name for the layer\n                 group = \"LC-2000\") %&gt;%\n  \n  #now lets add our NTEMS land cover from 2020\n  addRasterImage(ntems2020, \n                 #you can increase the allowable size of the rast here\n                 maxBytes = 10 * 1024 *1024,\n                 #provide a name for the layer\n                 group = \"LC-2020\") %&gt;%\n  \n  #allow for layers to be toggles on/off by adding them to the layers control\n  addLayersControl(baseGroups = c(\"LC-2000\",\"LC-2020\")) %&gt;%\n  \n  #add a legend\n  addRasterLegend(ntems2000, opacity = 1)%&gt;%\n  \n  #add scale bar\n  addScaleBar(position = c(\"bottomleft\"))\n\n\n\n\n\n\n\n \n2) In order to visualize layers side-by-side and compare them using a window slider, we need to create a left and right pane, and assign our NTEMS land cover rasters to one of these panes.\n\nl3 &lt;- leaflet(width = 600, height = 600)%&gt;%\n  \n  #set up the two map panes\n  addMapPane(\"right\", zIndex = 1) %&gt;%\n  addMapPane(\"left\",  zIndex = 2) %&gt;%\n  \n  #add the ESRI basemap to both map panes\n  addProviderTiles(\"Esri.WorldImagery\", group = \"base\", layerId = \"baseid1\", options = pathOptions(pane = \"right\")) %&gt;%\n  addProviderTiles(\"Esri.WorldImagery\", group = \"base\", layerId = \"baseid2\", options = pathOptions(pane = \"left\")) %&gt;%\n  \n  #now lets add our NTEMS land cover from 2000\n  addRasterImage(ntems2000, \n                 #you can increase the allowable size of the rast here\n                 maxBytes = 10 * 1024 *1024,\n                 #provide a name for the layer\n                 group = \"LC-2000\",\n                 #assign to a pane\n                 options = leafletOptions(pane = \"left\")) %&gt;%\n  \n  #now lets add our NTEMS land cover from 2020\n  addRasterImage(ntems2020, \n                 #you can increase the allowable size of the rast here\n                 maxBytes = 10 * 1024 *1024,\n                 #provide a name for the layer\n                 group = \"LC-2020\",\n                 #assign to a pane\n                 options = leafletOptions(pane = \"right\")) %&gt;%\n  \n  #allow for layers to be toggles on/off by adding them to the layers control\n  addLayersControl(overlayGroups = c(\"LC-2000\", \"LC-2020\")) %&gt;%\n  \n  #add slider control\n  addSidebyside(layerId = \"sidecontrols\",\n                rightId = \"baseid1\",\n                leftId  = \"baseid2\",\n                options = list(padding = 0)) %&gt;%\n  \n  #add a legend\n  addRasterLegend(ntems2000, opacity = 1)%&gt;%\n  \n  #add scale bar\n  addScaleBar(position = c(\"bottomleft\"))",
+    "crumbs": [
+      "Interactive Maps",
+      "Leaflet"
+    ]
   }
 ]

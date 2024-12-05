@@ -10,16 +10,16 @@ website:
     search: true
     contents:
       - text: "Home"
-        href: index.qmd
+        href: Landing_Page/index.qmd
       - section: "Cartography"
-        href: cartography.qmd
+        href: Cartography/cartography.qmd
         contents:
-          - art_of_maps.qmd
-          - arcgis_pro_demo.qmd
+          - Cartography/art_of_maps.qmd
+          - Cartography/arcgis_pro_demo.qmd
       - section: "Interactive Maps"
-        href: interactive_maps.qmd
+        href: Interactive_Maps/interactive_maps.qmd
         contents: 
-          - leaflet.qmd
+          - Interactive_Maps/leaflet.qmd
 
 format:
   html:
