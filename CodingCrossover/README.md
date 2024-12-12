@@ -27,8 +27,8 @@ There are some key differences between Python and R that may take some time to g
 - **String handling**
   - Python has robust built-in string operations, slicing and methods.
   - R relies on more external packages (like stringr) for advanced text manipulation, though basic operations are available natively.
----
 
+---
 ## Common Geomatics Libraries
 
 ### R Libraries
@@ -50,9 +50,6 @@ There are some key differences between Python and R that may take some time to g
 | **`shapely`**      | For manipulation and analysis of geometric objects.                                              |
 | **`scikit-learn`** | For training classification, regression, and clustering models, and data preprocessing.          |
 | **`matplotlib`**   | For creating graphics with provided data.                                                        |
-
-
----
 
 ## Importing Libraries
 
@@ -79,6 +76,7 @@ from rasterio.warp import calculate_default_transform, reproject    # For raster
 from shapely.geometry import box                                    # For creating bounding box
 ```
 
+---
 ## Cheat Sheet: Common Geomatics Functions
 
 | **Functionality**            | **R (`terra`, `sf`)**                                                                                                                                   | **Python (`rasterio`, `geopandas`, etc.)**                                                                                                                      |
