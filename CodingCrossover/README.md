@@ -23,7 +23,7 @@ There are some key differences between Python and R that may take some time to g
 - **Looping and iteration**
   - Python encourages explicit loops (e.g., `for`, `while`), and list comprehension is widely used.
     - `squares = [x**2 for x in range(10)] # example list comprehension`
-  - R encourages vectorized operations and `apply` funcionts over explicit `for` loops for efficiency and clarity.
+  - R encourages vectorized operations and `apply` functions over explicit `for` loops for efficiency and clarity.
 - **String handling**
   - Python has robust built-in string operations, slicing and methods.
   - R relies on more external packages (like stringr) for advanced text manipulation, though basic operations are available natively.
