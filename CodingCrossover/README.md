@@ -2,6 +2,25 @@
 This repository provides a side-by-side comparison of how to perform common geomatics tasks in **R** and **Python**. It focuses on the libraries `terra` and `sf` in R, and `rasterio`, `numpy`, `pandas`, and `geopandas` in Python.
 
 ---
+## Key Differences in Python vs. R
+There are some key differences between Python and R that may take some time to get used to when switching between them.
+
+- **Indexing**
+  - Python uses zero-based indexing (lists, arrays start from index 0).
+  - R uses one-based indexing (vectors, matrices start from index 1).
+- **Data structures**
+  - Python's primary sequence structures are lists (mutable) and tuples (immutable), and numpy arrays for numerical operations.
+  - R's core structures are vectores, matrices, data frames and lists, where vectors are a fundamental unit of operation.
+- **Vectorization and broadcasting**
+  - R is inherently vectorized; many operations naturally apply element-wise without extra effort.
+  - Python requires libraries like `NumPy` for similar vectorized operations and broadcasting.
+- **Function arguments**
+  - In Python, keyword arguments (kwargs) are passed by name after positional arguments, and default values are common.
+  - In R, arguments can be matched by position or name, and partial argument matching (unique abbreviations) is allowed.
+- **Assignment**
+  - Python uses `=` for assignment.
+  - R commonly uses `<-` for assignment, though `=` can also be used. 
+---
 
 ## Common Geomatics Libraries
 
@@ -52,6 +71,7 @@ from rasterio.mask import mask                                      # For maskin
 from rasterio.warp import calculate_default_transform, reproject    # For raster reprojection
 from shapely.geometry import box                                    # For creating bounding box
 ```
+
 ## Cheat Sheet: Common Geomatics Functions
 
 | **Functionality**            | **R (`terra`, `sf`)**                                                                                                                                   | **Python (`rasterio`, `geopandas`, etc.)**                                                                                                                      |
