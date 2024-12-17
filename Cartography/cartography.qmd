@@ -11,4 +11,4 @@ authors:
 
 Cartography is the art and science of creating, studying, and distributing maps and other visual representations of geographical areas. It involves a combination of scientific and artistic skills to communicate information about a place.
 
-![Eratosthenes' World Map (220 BCE) showing the results of Alexander the Great's conquests. Eratosthenes was the first geographer to include parallels and meridians in his maps, allowing for the calculation of distance.](images/clipboard-2330051434.jpeg){fig-align="left" width="700"}
+![Eratosthenes' World Map (220 BCE) showing the results of Alexander the Great's conquests. Eratosthenes was the first geographer to include parallels and meridians in his maps, allowing for the calculation of distance.](images/Eratosthenes_World_Map.jpg){fig-align="left"}
