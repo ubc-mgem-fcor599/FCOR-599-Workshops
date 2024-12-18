@@ -20,6 +20,8 @@ website:
         href: Interactive_Maps/interactive_maps.qmd
         contents: 
           - Interactive_Maps/leaflet.qmd
+      - section: "Coding Crossover"
+        href: CodingCrossover/README.md
           
 format:
   html:
