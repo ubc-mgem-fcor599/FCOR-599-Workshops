@@ -100,7 +100,7 @@ from shapely.geometry import box                                    # For creati
 ## Classification Example
 In GEM520 there was a lab assignment that focused on how to perform a supervised image classification using QGIS and R to represent the 7 land cover classes for the Gulf Islands. Within this lab training and validation polygons were delineated using QGIS and then used to train a Maximum Likelihood Classifier in R. In this example we will be using those same polygons and Landsat image but we will be doing the classification step using Python instead.
 
-*Note: it is recommended that you use the same polygons that you delineated for the lab to see if there are any differences in the outputs, but if you do not have them still you can access them [here](https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/tree/main/CodingCrossover/data)*
+*Note: it is recommended that you use the same polygons that you delineated for the lab to see if there are any differences in the outputs, but if you do not have them still you can access them [here](https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/tree/main/CodingCrossover/data).*
 
 ### Step 1
 Before being able to run this example you will need to set up a Conda environment with the correct packages installed. To do this you will first need to download the `create_environment.py` script from [here](https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/blob/main/CodingCrossover/scripts/create_environment.py).
@@ -110,4 +110,6 @@ Next you need to open up Anaconda Prompt and type in `python [path/to/create_env
 *Note: you do not need to run this example in the Jupter Lab IDE but the live tutorial will be done using it.*
 
 ### Step 2
-Once the environment is created and Jupyter Lab is opened you can download the `supervised_classification.ipynb` from [here](https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/blob/main/CodingCrossover/scripts/supervised_classification.ipynb). This notebook will walk you through similar steps to the ones found in the original lab assignment. You will need to change the file paths within this notebook to the ones in your system and run each code chunk to show your results.
+Once the environment is created and Jupyter Lab is opened you can download the `supervised_classification.ipynb` from [here](https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/blob/main/CodingCrossover/scripts/supervised_classification.ipynb). This notebook will walk you through similar steps to the ones found in the original lab assignment. 
+
+*Note: you will need to change the file paths within this notebook to the ones in your system and run each code chunk to show your results.*
