@@ -21,7 +21,7 @@ website:
         contents: 
           - Interactive_Maps/leaflet.qmd
       - section: "Coding Crossover"
-        href: CodingCrossover/README.md
+        href: CodingCrossover/README.qmd
           
 format:
   html:
