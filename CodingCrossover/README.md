@@ -22,7 +22,7 @@ There are some key differences between Python and R that may take some time to g
   - R commonly uses `<-` for assignment, though `=` can also be used.
 - **Looping and iteration**
   - Python encourages explicit loops (e.g., `for`, `while`), and list comprehension is widely used.
-    - `squares = [x**2 for x in range(10)] # example list comprehension`
+<br>`squares = [x**2 for x in range(10)] # example list comprehension`
   - R encourages vectorized operations and `apply` functions over explicit `for` loops for efficiency and clarity.
 - **String handling**
   - Python has robust built-in string operations, slicing and methods.
@@ -110,6 +110,6 @@ Next you need to open up Anaconda Prompt and type in `python [path/to/create_env
 *Note: you do not need to run this example in the Jupter Lab IDE but the live tutorial will be done using it.*
 
 ### Step 2
-Once the environment is created and Jupyter Lab is opened you can download the `supervised_classification.ipynb` from [here](https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/blob/main/CodingCrossover/scripts/supervised_classification.ipynb). This notebook will walk you through similar steps to the ones found in the original lab assignment. 
+Once the environment is created and Jupyter Lab is opened you can download the `supervised_classification.ipynb` from [here](https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/blob/main/CodingCrossover/scripts/supervised_classification.ipynb). This notebook will walk you through similar steps to the ones found in the original lab assignment. Open this notebook and run each of the code chunks.
 
 *Note: you will need to change the file paths within this notebook to the ones in your system and run each code chunk to show your results.*
