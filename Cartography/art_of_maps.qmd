@@ -1,8 +1,7 @@
 ---
 title: "The Art of Map Making"
-
 ---
 
-Lets add some text here about the history of maps. Some are very beautiful, some less so. Although we rightfully place emphasis on ensuring the scientific integrity of maps, the artistic component of map making is a key component of science communication, and should not be overlooked. 
+# This section is under construction
 
-
+Lets add some text here about the history of maps. Some are very beautiful, some less so. Although we rightfully place emphasis on ensuring the scientific integrity of maps, the artistic component of map making is a key component of science communication, and should not be overlooked.

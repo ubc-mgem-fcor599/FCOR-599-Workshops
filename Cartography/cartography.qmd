@@ -7,6 +7,8 @@ authors:
     degrees: BSc
 ---
 
+# This section is under construction
+
 *"All maps are lies, but some are useful"* \~ Dr. Paul Pickell, circa 2020
 
 Cartography is the art and science of creating, studying, and distributing maps and other visual representations of geographical areas. It involves a combination of scientific and artistic skills to communicate information about a place.

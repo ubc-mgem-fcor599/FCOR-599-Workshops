@@ -57,7 +57,7 @@ coltab(ntems2020) <- coldf
 
 ```
 
-**The Basics:**
+## **The Basics**
 
 Many software and coding packages can be used to create interactive maps. In this particular demo, we will show you an easy way to produce interactive maps in leaflet - a popular R package. Leaflet is intuitive, fast, and has many arguments that allow us to easily adjust the way in which we present our maps. In the example below, we used NTEMs land cover from 2020 to product a simple interactive map for Vancouver Island. In the code below, you will notice that we add in a basemap using the 'addProviderTiles' argument. You can browse for available leaflet basemaps here: <https://leaflet-extras.github.io/leaflet-providers/preview/>
 
@@ -85,10 +85,9 @@ l <- leaflet(width = 600, height = 600)%>%
 l
 ```
 
-<br>
-<br>
+<br> <br>
 
-**Comparing/Showing Multiple Layers:**
+## **Comparing/Showing Multiple Layers**
 
 Now let's step things up a notch, and add some additional content to our map. For the purposes of this demonstration, let's say you have been tasked with showcasing changes in land cover on Vancouver Island from 2000 to 2020. To do so, we can use 2 key leaflet functionalities: 1) adding a toggle menu - allowing us to switch between layers, 2) adding a 'slider', which we can use to visualize two layers side-by-side.
 
@@ -131,8 +130,8 @@ l2 <- leaflet(width = 600, height = 600)%>%
 ```{r map2, echo=FALSE}
 l2
 ```
-<br>
-<br>
+
+<br> <br>
 
 2\) In order to visualize layers side-by-side and compare them using a window slider, we need to create a left and right pane, and assign our NTEMS land cover rasters to one of these panes.
 
