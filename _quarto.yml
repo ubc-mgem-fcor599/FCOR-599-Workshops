@@ -10,7 +10,7 @@ website:
     search: true
     contents:
       - text: "Home"
-        href: Landing_Page/index.qmd
+        href: index.qmd
       - section: "Cartography"
         href: Cartography/cartography.qmd
         contents:
