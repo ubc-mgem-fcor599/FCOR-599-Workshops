@@ -2,6 +2,20 @@
 title: "The Art of Map Making"
 ---
 
-# This section is under construction
+# The Art of Map Making
 
-Lets add some text here about the history of maps. Some are very beautiful, some less so. Although we rightfully place emphasis on ensuring the scientific integrity of maps, the artistic component of map making is a key component of science communication, and should not be overlooked.
+Although we rightfully place emphasis on ensuring the scientific integrity of maps in this course and program, the artistic component of map making is a key component of science communication, and should not be overlooked. Cartography is the art and science of map-making. Finding that balance between art and science can be very hard, and will look different for every single person that makes maps. However, finding that balance is key to creating beautiful maps that people will want to look at, but also effectively communicate your data and your take home message.
+
+# Map Making for Academia
+
+While making pretty and aesthetically pleasing should be one of your top priorities, something to consider even more than that when creating a map is to think of the audience or intended purpose of this map.
+
+## Data
+
+## Colour
+
+# Helpful Links and Resources
+
+[Maps for Academic Journals](https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals)
+
+[Tutorial Cartography for Map Figures in Academic Journals & Books](https://courses.gisopencourseware.org/mod/book/tool/print/index.php?id=1017)
