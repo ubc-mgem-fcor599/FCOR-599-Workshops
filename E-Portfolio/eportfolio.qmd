@@ -7,13 +7,23 @@ authors:
 
 ## E-Portfolio Basics
 
-As part of FCOR 599, you are required to produce a professional E-Portfolio. This portfolio is intended to capture the breadth of skills you have developed throughout the program, including scientific writing & reporting, figure design, cartography, coding, etc. As has been introduced in the E-Portfolio workshop, a portfolio is essentially an organized digital collection of artifacts that highlight key pieces of work, accomplishments and skills.
+As part of FCOR 599, you are required to produce a professional E-Portfolio. This portfolio is intended to capture the breadth of skills you have developed throughout the program, including scientific writing & reporting, figure design, cartography, coding, etc. As has been introduced in the E-Portfolio workshop, a portfolio is essentially an organized digital collection of artifacts that highlight key pieces of work, accomplishments and skills. This is a great place for you to present your learning, experience, achievements, etc. - and serves as a great reference for researchers, colleagues and potential employers to see what you're all about.
+
+In other words, an E-Portfolio goes beyond what you might present in a resume or social media (i.e. linkedin) page, and allows you to express yourself through written work, images, media, etc. Rather than focusing on presenting entire bodies of finished work like a report, your E-Portfolio is a great place to demonstrate your learning and skills by presenting smaller pieces of work. Whilst many of your MGEM deliverables are the product of rubrics and assignment instructions, your E-Portfolio is ultimately entirely your own - so feel free to adjust, edit, add, and remove from your program deliverables as you see fit.
+
+We highly recommend to design elements of learning into your E-Portfolio. Rather than just sharing a figure, you may want to also share some annotated code that you used to produce said figure. You could also add several iterations of a figure (of varying complexity) to demonstrate your learning trajectory. Before we dive into the techincal aspects of building your E-Portfolio using Quarto & GitHub, here are some key considerations from the UBC library workshop to remember:
+
+-   Your work will be visible to anyone on the internet. Ensure that you are representing yourself accurately.
+
+-   Provide credit to those who have contributed to your work.
+
+-   Respect and follow copyright and privacy laws where appropriate.
 
 ## Building an E-Portfolio in Quarto
 
 In your E-Portfolio workshop, you were introduced to UBC blogs, where you can host a portfolio via wordpress. Since many of you are quite familiar with coding in R-studio at this stage in the pogram, the demo below will demonstrate how you can build a portfolio using Quarto in R-Studio. Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
-In this module, we will be using Quarto to construct an E-portfolio. The key advantage of building your portfolio in Quarto is that you can easily integrate any workflow, results, figures etc. that you have created in R-Studio. This workshop repository itself was built in Quarto, and is hosted on Github. In order to build your own portfolio, we have put together a simple github repository that provides the basic files you will need. In order to interact with the repository and build your own e-portfolio using quarto and github, you will need the following:
+The key advantage of building your portfolio in Quarto is that you can easily integrate any workflow, results, figures etc. that you have created in R-Studio. This workshop repository itself was built in Quarto, and is hosted on Github. In order to build your own portfolio, we have put together a simple github repository that provides the basic files you will need. In order to interact with the repository and build your own e-portfolio using quarto and github, you will need the following:
 
 -   A github account.
 
@@ -31,7 +41,7 @@ Before we begin, make sure you have Github desktop installed on your device, tha
 
 2.  Now 'fork' the repository - this will create a copy of all of the files on your github account. You can make changes to this 'forked' repository without affecting the original or getting things mixed up with your peers. Make sure you provide a descriptive name for the forked repo.
 
-3.  Open up your Github Desktop app and navigate to 'File \> Clone Repository'. This will show you all of the repositories that are available to be cloned based on your github account. Find the forked repo and clone it to a local path. You will get a pop-up that asks you how you plan to use this fork - make sure you select the 'for my own purposes' option.
+3.  Open up your Github Desktop app and navigate to 'File \> Clone Repository'. This will show you all of the repositories that are available to be cloned based on your github account. Find the forked repo and clone it to a local path. You will get a pop-up that asks you how you plan to use this fork - **make sure you select the 'for my own purposes' option**.
 
 4.  In the Github Desktop app, click on the 'Show in Explorer' button - this will navigate to the folder on your computer where all the repo files are stored. This folder is where you will make changes to your E-Portfolio files.
 
