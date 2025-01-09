@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>E-Portfolio – FCOR 599: Workshop Artifacts</title>
+<title>Coding Crossover – FCOR 599: Workshop Artifacts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../E-Portfolio/eportfolio.html">E-portfolio</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../CodingCrossover/codingcrossover.html">Coding Crossover</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -153,13 +153,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../E-Portfolio/eportfolio.html" class="sidebar-item-text sidebar-link active">
+  <a href="../E-Portfolio/eportfolio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">E-portfolio</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../CodingCrossover/codingcrossover.html" class="sidebar-item-text sidebar-link">
+  <a href="../CodingCrossover/codingcrossover.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Coding Crossover</span></a>
   </div>
 </li>
@@ -173,8 +173,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#e-portfolio-basics" id="toc-e-portfolio-basics" class="nav-link active" data-scroll-target="#e-portfolio-basics">E-Portfolio Basics</a></li>
-  <li><a href="#building-an-e-portfolio-in-quarto" id="toc-building-an-e-portfolio-in-quarto" class="nav-link" data-scroll-target="#building-an-e-portfolio-in-quarto">Building an E-Portfolio in Quarto</a></li>
+  <li><a href="#key-differences-in-python-vs.-r" id="toc-key-differences-in-python-vs.-r" class="nav-link active" data-scroll-target="#key-differences-in-python-vs.-r">Key Differences in Python vs.&nbsp;R</a></li>
+  <li><a href="#common-geomatics-libraries" id="toc-common-geomatics-libraries" class="nav-link" data-scroll-target="#common-geomatics-libraries">Common Geomatics Libraries</a></li>
+  <li><a href="#importing-libraries" id="toc-importing-libraries" class="nav-link" data-scroll-target="#importing-libraries">Importing Libraries</a></li>
+  <li><a href="#cheat-sheet-common-geomatics-functions" id="toc-cheat-sheet-common-geomatics-functions" class="nav-link" data-scroll-target="#cheat-sheet-common-geomatics-functions">Cheat Sheet: Common Geomatics Functions</a></li>
+  <li><a href="#classification-example" id="toc-classification-example" class="nav-link" data-scroll-target="#classification-example">Classification Example</a>
+  <ul class="collapse">
+  <li><a href="#step-1" id="toc-step-1" class="nav-link" data-scroll-target="#step-1">Step 1</a></li>
+  <li><a href="#step-2" id="toc-step-2" class="nav-link" data-scroll-target="#step-2">Step 2</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -183,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">E-Portfolio</h1>
+<h1 class="title">Coding Crossover</h1>
 </div>
 
 
@@ -193,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Ramon Melser, MGEM </p>
+             <p>Brent Murray, MGEM </p>
           </div>
   </div>
     
@@ -206,45 +213,259 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="e-portfolio-basics" class="level2">
-<h2 class="anchored" data-anchor-id="e-portfolio-basics">E-Portfolio Basics</h2>
-<p>As part of FCOR 599, you are required to produce a professional E-Portfolio. This portfolio is intended to capture the breadth of skills you have developed throughout the program, including scientific writing &amp; reporting, figure design, cartography, coding, etc. As has been introduced in the E-Portfolio workshop, a portfolio is essentially an organized digital collection of artifacts that highlight key pieces of work, accomplishments and skills.</p>
+<p>This repository provides a side-by-side comparison of how to perform common geomatics tasks in&nbsp;R&nbsp;and&nbsp;Python. It focuses on the libraries&nbsp;<code>terra</code>&nbsp;and&nbsp;<code>sf</code>&nbsp;in R, and&nbsp;<code>rasterio</code>,&nbsp;<code>numpy</code>,&nbsp;<code>pandas</code>, and&nbsp;<code>geopandas</code>&nbsp;in Python.</p>
+<section id="key-differences-in-python-vs.-r" class="level2">
+<h2 class="anchored" data-anchor-id="key-differences-in-python-vs.-r">Key Differences in Python vs.&nbsp;R</h2>
+<p>There are some key differences between Python and R that may take some time to get used to when switching between them.</p>
+<p><strong>Indexing:</strong></p>
+<ul>
+<li><p>Python uses zero-based indexing (lists, arrays start from index 0).</p></li>
+<li><p>R uses one-based indexing (vectors, matrices start from index 1).</p></li>
+</ul>
+<p><strong>Data structures:</strong></p>
+<ul>
+<li><p>Python’s primary sequence structures are lists (mutable) and tuples (immutable), and numpy arrays for numerical operations.</p></li>
+<li><p>R’s core structures are vectores, matrices, data frames and lists, where vectors are a fundamental unit of operation.</p></li>
+</ul>
+<p><strong>Vectorization and broadcasting</strong></p>
+<ul>
+<li><p>R is inherently vectorized; many operations naturally apply element-wise without extra effort.</p></li>
+<li><p>Python requires libraries like <code>NumPy</code> for similar vectorized operations and broadcasting.</p></li>
+</ul>
+<p><strong>Function arguments</strong></p>
+<ul>
+<li><p>In Python, keyword arguments (kwargs) are passed by name after positional arguments, and default values are common.</p></li>
+<li><p>In R, arguments can be matched by position or name, and partial argument matching (unique abbreviations) is allowed.</p></li>
+</ul>
+<p><strong>Assignment</strong></p>
+<ul>
+<li><p>Python uses <code>=</code> for assignment.</p></li>
+<li><p>R commonly uses <code>&lt;-</code> for assignment, though <code>=</code> can also be used.</p></li>
+</ul>
+<p><strong>Looping and iteration</strong></p>
+<ul>
+<li><p>Python encourages explicit loops (e.g., <code>for</code>, <code>while</code>), and list comprehension is widely used.<br>
+<code>squares = [x**2 for x in range(10)] # example list comprehension</code></p></li>
+<li><p>R encourages vectorized operations and <code>apply</code> functions over explicit <code>for</code> loops for efficiency and clarity.</p></li>
+</ul>
+<p><strong>String handling</strong></p>
+<ul>
+<li><p>Python has robust built-in string operations, slicing and methods.</p></li>
+<li><p>R relies on more external packages (like stringr) for advanced text manipulation, though basic operations are available natively.</p></li>
+</ul>
 </section>
-<section id="building-an-e-portfolio-in-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="building-an-e-portfolio-in-quarto">Building an E-Portfolio in Quarto</h2>
-<p>In your E-Portfolio workshop, you were introduced to UBC blogs, where you can host a portfolio via wordpress. Since many of you are quite familiar with coding in R-studio at this stage in the pogram, the demo below will demonstrate how you can build a portfolio using Quarto in R-Studio. Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
-<p>In this module, we will be using Quarto to construct an E-portfolio. The key advantage of building your portfolio in Quarto is that you can easily integrate any workflow, results, figures etc. that you have created in R-Studio. This workshop repository itself was built in Quarto, and is hosted on Github. In order to build your own portfolio, we have put together a simple github repository that provides the basic files you will need. In order to interact with the repository and build your own e-portfolio using quarto and github, you will need the following:</p>
-<ul>
-<li><p>A github account.</p></li>
-<li><p>Github deskptop (make sure you are logged in).</p></li>
-<li><p>R-Studio.</p></li>
-<li><p>The sample repository (<a href="https://github.com/ubc-mgem-fcor599/E-Portfolio">available here</a>).</p></li>
-</ul>
-<p><strong>Quarto Portfolio Instructions:</strong></p>
-<p>Before we begin, make sure you have Github desktop installed on your device, that you are logged in to your github account in the desktop app, and that you have R-Studio installed on your device.</p>
-<ol type="1">
-<li><p>Navigate to the sample repository using the link above.</p></li>
-<li><p>Now ‘fork’ the repository - this will create a copy of all of the files on your github account. You can make changes to this ‘forked’ repository without affecting the original or getting things mixed up with your peers. Make sure you provide a descriptive name for the forked repo.</p></li>
-<li><p>Open up your Github Desktop app and navigate to ‘File &gt; Clone Repository’. This will show you all of the repositories that are available to be cloned based on your github account. Find the forked repo and clone it to a local path. You will get a pop-up that asks you how you plan to use this fork - make sure you select the ‘for my own purposes’ option.</p></li>
-<li><p>In the Github Desktop app, click on the ‘Show in Explorer’ button - this will navigate to the folder on your computer where all the repo files are stored. This folder is where you will make changes to your E-Portfolio files.</p></li>
-<li><p>Open up an R-Studio session and click on ‘File &gt; Open File’. Navigate to your explorer folder with all of the repo files, and open up the ‘index.qmd’ file. Edit the file with your own profile picture (if you’d like), contact information, and introduction blurb. When you are finished editing the page, save the .qmd file and hit ‘render’. This will give you a preview of what the page will look like in your E-Portfolio. Repeat this step for the ‘resume.qmd’ file.</p></li>
-<li><p>In your Github Desktop, you will now notice that there are local changes to the repository files based on your edits. You can push these edits to your github by clicking ‘commit to main’.</p></li>
-</ol>
-<p>In order to customize your E-Portfolio, we encourage you to review the following resources:</p>
-<ul>
-<li><p><a href="https://quarto.org/docs/output-formats/html-basics.html">Quarto HTML Basics</a></p></li>
-<li><p><a href="https://quarto.org/docs/reference/formats/html.html">Quarto HTML Options</a></p></li>
-<li><p><a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto Theming</a></p></li>
-</ul>
-<p>Once you are satisfied with the content of your E-Portfolio, it is time to publish your website. Before you do so, make sure you have committed all local changes from your desktop. Once you are ready:</p>
-<ol type="1">
-<li><p>Open your github account in your web browser, and navigate to your E-Portfolio repository.</p></li>
-<li><p>In the top bar, select ‘Settings’ and navigate to ‘Pages’ under the ‘Code and automation’ column.</p></li>
-<li><p>Under ‘Build and deployment’ &gt; ‘Branch’, select the ‘Main’ branch, and click save.</p></li>
-<li><p>Your website is now being built. This will take a few minutes, so be patient and refresh the page after ~ 2-5 minutes. Once complete, a url for your website will now be available to you.</p></li>
-</ol>
+<section id="common-geomatics-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="common-geomatics-libraries">Common Geomatics Libraries</h2>
+<p><strong>R Libraries</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Library</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><code>terra</code></strong></td>
+<td>For spatial data manipulation, raster data processing, and geospatial analysis.</td>
+</tr>
+<tr class="even">
+<td><strong><code>sf</code></strong></td>
+<td>For handling vector spatial data, including shapefiles, GeoJSON, and other formats.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>dplyr</code></strong></td>
+<td>For data manipulation.</td>
+</tr>
+<tr class="even">
+<td><strong><code>caret</code></strong></td>
+<td>For training and plotting classification and regression models.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>ggplot2</code></strong></td>
+<td>For creating graphics with provided data.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Python Libraries</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Library</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><code>rasterio</code></strong></td>
+<td>For raster file I/O and processing.</td>
+</tr>
+<tr class="even">
+<td><strong><code>numpy</code></strong></td>
+<td>For numerical data manipulation, often used with raster data.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>pandas</code></strong></td>
+<td>For tabular data manipulation.</td>
+</tr>
+<tr class="even">
+<td><strong><code>geopandas</code></strong></td>
+<td>For handling vector spatial data, extending <code>pandas</code> to work with geospatial formats.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>shapely</code></strong></td>
+<td>For manipulation and analysis of geometric objects.</td>
+</tr>
+<tr class="even">
+<td><strong><code>scikit-learn</code></strong></td>
+<td>For training classification, regression, and clustering models, and data preprocessing.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>matplotlib</code></strong></td>
+<td>For creating graphics with provided data.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="importing-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="importing-libraries">Importing Libraries</h2>
+<p><strong>R</strong></p>
+<pre><code># Import libraries 
+library(terra)     # For raster operations 
+library(sf)        # For vector operations 
+library(dplyr)     # For data manipulation 
+library(ggplot2)   # For creating visualizations</code></pre>
+<p><strong>Python</strong></p>
+<pre><code># Import libraries
+import rasterio                                                     # For raster operations 
+import geopandas as gpd                                             # For vector data 
+import numpy as np                                                  # For numerical data 
+import pandas as pd                                                 # For tabular data manipulation 
+import matplotlib.pyplot as plt                                     # For creating visulizations 
+from rasterio.features import rasterize                             # For rasterizing vector data 
+from rasterio.mask import mask                                      # For masking raster data 
+from rasterio.warp import calculate_default_transform, reproject    # For raster reprojection 
+from shapely.geometry import box                                    # For creating bounding box</code></pre>
+</section>
+<section id="cheat-sheet-common-geomatics-functions" class="level2">
+<h2 class="anchored" data-anchor-id="cheat-sheet-common-geomatics-functions">Cheat Sheet: Common Geomatics Functions</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 36%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Functionality</strong></th>
+<th><strong>R (<code>terra</code>, <code>sf</code>)</strong></th>
+<th><strong>Python (<code>rasterio</code>, <code>geopandas</code>, etc.)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Read a shapefile</strong></td>
+<td><code>shp &lt;- sf::st_read("path/to/file.shp")</code></td>
+<td><code>shp = gpd.read_file("path/to/file.shp")</code></td>
+</tr>
+<tr class="even">
+<td><strong>Write a shapefile</strong></td>
+<td><code>sf::st_write(shp, "path/to/output.shp")</code></td>
+<td><code>shp.to_file("path/to/output.shp")</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Read a raster</strong></td>
+<td><code>raster &lt;- terra::rast("path/to/file.tif")</code></td>
+<td><code>with rasterio.open("path/to/file.tif") as src:</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>raster = src.read()</code></td>
+</tr>
+<tr class="even">
+<td><strong>Write a raster</strong></td>
+<td><code>terra::writeRaster(raster, "path/to/output.tif", overwrite=TRUE)</code></td>
+<td><code>with rasterio.open("path/to/output.tif", "w", **kwargs) as dst:</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>dst.write(raster)</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Calculate NDVI</strong></td>
+<td><code>ndvi &lt;- (nir - red) / (nir + red)</code><br>
+<em>(assuming <code>nir</code> and <code>red</code> are <code>terra</code> raster objects)</em></td>
+<td><code>ndvi = (nir - red) / (nir + red)</code><br>
+<em>(assuming <code>nir</code> and <code>red</code> are <code>numpy</code> arrays)</em></td>
+</tr>
+<tr class="even">
+<td><strong>Clip a raster by extent</strong></td>
+<td><code>clipped &lt;- terra::crop(raster, extent)</code></td>
+<td><code>clipped, _ = mask(src, shapes, crop=True)</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Clip a vector by extent</strong></td>
+<td><code>clipped &lt;- sf::st_crop(vector, xmin = x1, ymin = y1, xmax = x2, ymax = y2)</code></td>
+<td><code>bbox = box(x1, y1, x2, y2)</code><br>
+<code>clipped = vector.clip(bbox)</code></td>
+</tr>
+<tr class="even">
+<td><strong>Reproject a shapefile</strong></td>
+<td><code>reproj &lt;- sf::st_transform(shp, crs = 4326)</code></td>
+<td><code>shp = shp.to_crs(epsg=4326)</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Reproject a raster</strong></td>
+<td><code>reproj &lt;- terra::project(raster, "EPSG:4326")</code></td>
+<td><code>reprojected_raster = reproject(src, transform)</code></td>
+</tr>
+<tr class="even">
+<td><strong>Calculate area of polygons</strong></td>
+<td><code>shp$area &lt;- sf::st_area(shp)</code></td>
+<td><code>shp["area"] = shp.geometry.area</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Sort polygons by attribute</strong></td>
+<td><code>sorted &lt;- shp[order(shp$attribute), ]</code></td>
+<td><code>sorted = shp.sort_values("attribute")</code></td>
+</tr>
+<tr class="even">
+<td><strong>Extract raster values</strong></td>
+<td><code>values &lt;- terra::extract(raster, sf::st_coordinates(points))</code></td>
+<td><code>values = [raster[row, col] for row, col in points]</code> <em>(requires array coordinates for <code>numpy</code>)</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Buffer around features</strong></td>
+<td><code>buffered &lt;- sf::st_buffer(shp, dist = 500)</code></td>
+<td><code>buffered = shp.buffer(500)</code></td>
+</tr>
+<tr class="even">
+<td><strong>Rasterize a vector layer</strong></td>
+<td><code>rasterized &lt;- terra::rasterize(shp, raster)</code></td>
+<td><code>rasterized = rasterize([(geom, 1) for geom in shp.geometry], out_shape=shape, transform=transform)</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="classification-example" class="level2">
+<h2 class="anchored" data-anchor-id="classification-example">Classification Example</h2>
+<p>In GEM520 there was a lab assignment that focused on how to perform a supervised image classification using QGIS and R to represent the 7 land cover classes for the Gulf Islands. Within this lab training and validation polygons were delineated using QGIS and then used to train a Maximum Likelihood Classifier in R. In this example we will be using those same polygons and Landsat image but we will be doing the classification step using Python instead.</p>
+<p><em>Note: it is recommended that you use the same polygons that you delineated for the lab to see if there are any differences in the outputs, but if you do not have them still you can access them <a href="https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/tree/main/CodingCrossover/data">here</a>.</em></p>
+<section id="step-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-1">Step 1</h3>
+<p>Before being able to run this example you will need to set up a Conda environment with the correct packages installed. To do this you will first need to download the <code>create_environment.py</code> script from <a href="https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/blob/main/CodingCrossover/scripts/create_environment.py">here</a>.</p>
+<p>Next you need to open up Anaconda Prompt and type in <code>python [path/to/create_environment.py]</code>. This will create a new Conda environment for you with the correct packages and then open a new Jupyter Lab IDE.</p>
+<p><em>Note: you do not need to run this example in the Jupter Lab IDE but the live tutorial will be done using it.</em></p>
+</section>
+<section id="step-2" class="level3">
+<h3 class="anchored" data-anchor-id="step-2">Step 2</h3>
+<p>Once the environment is created and Jupyter Lab is opened you can download the <code>supervised_classification.ipynb</code> from <a href="https://github.com/ubc-mgem-fcor599/FCOR-599-Workshops/blob/main/CodingCrossover/scripts/supervised_classification.ipynb">here</a>. This notebook will walk you through similar steps to the ones found in the original lab assignment. Open this notebook and run each of the code chunks.</p>
+<p><em>Note: you will need to change the file paths within this notebook to the ones in your system and run each code chunk to show your results.</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

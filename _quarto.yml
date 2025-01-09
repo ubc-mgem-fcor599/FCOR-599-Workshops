@@ -22,6 +22,8 @@ website:
           - Interactive_Maps/leaflet.qmd
       - text: "E-portfolio"
         href: E-Portfolio/eportfolio.qmd
+      - text: "Coding Crossover"
+        href: CodingCrossover/codingcrossover.qmd
           
 format:
   html:
