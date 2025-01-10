@@ -11,19 +11,21 @@ website:
     contents:
       - text: "Home"
         href: index.qmd
+      - text: "E-portfolio"
+        href: E-Portfolio/eportfolio.qmd
+      - section: "Interactive Maps"
+        href: Interactive_Maps/interactive_maps.qmd
+        contents: 
+          - Interactive_Maps/leaflet.qmd
+      - text: "Coding Crossover"
+        href: CodingCrossover/codingcrossover.qmd
       - section: "Cartography"
         href: Cartography/cartography.qmd
         contents:
           - Cartography/art_of_maps.qmd
           - Cartography/arcgis_pro_demo.qmd
-      - section: "Interactive Maps"
-        href: Interactive_Maps/interactive_maps.qmd
-        contents: 
-          - Interactive_Maps/leaflet.qmd
-      - text: "E-portfolio"
-        href: E-Portfolio/eportfolio.qmd
-      - text: "Coding Crossover"
-        href: CodingCrossover/codingcrossover.qmd
+      
+      
           
 format:
   html:

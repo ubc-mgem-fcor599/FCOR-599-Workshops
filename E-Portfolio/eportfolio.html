@@ -111,15 +111,44 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../E-Portfolio/eportfolio.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">E-portfolio</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../Cartography/cartography.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Cartography</span></a>
+            <a href="../Interactive_Maps/interactive_maps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interactive Maps</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Interactive_Maps/leaflet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Leaflet</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../CodingCrossover/codingcrossover.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coding Crossover</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../Cartography/cartography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cartography</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Cartography/art_of_maps.html" class="sidebar-item-text sidebar-link">
@@ -134,35 +163,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../Interactive_Maps/interactive_maps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Interactive Maps</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Interactive_Maps/leaflet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Leaflet</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../E-Portfolio/eportfolio.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">E-portfolio</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../CodingCrossover/codingcrossover.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Coding Crossover</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -220,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="building-an-e-portfolio-in-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="building-an-e-portfolio-in-quarto">Building an E-Portfolio in Quarto</h2>
 <p>In your E-Portfolio workshop, you were introduced to UBC blogs, where you can host a portfolio via wordpress. Since many of you are quite familiar with coding in R-studio at this stage in the pogram, the demo below will demonstrate how you can build a portfolio using Quarto in R-Studio. Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
-<p>In this module, we will be using Quarto to construct an E-portfolio. The key advantage of building your portfolio in Quarto is that you can easily integrate any workflow, results, figures etc. that you have created in R-Studio. This workshop repository itself was built in Quarto, and is hosted on Github. In order to build your own portfolio, we have put together a simple github repository that provides the basic files you will need. In order to interact with the repository and build your own e-portfolio using quarto and github, you will need the following:</p>
+<p>The key advantage of building your portfolio in Quarto is that you can easily integrate any workflow, results, figures etc. that you have created in R-Studio. This workshop repository itself was built in Quarto, and is hosted on Github. In order to build your own portfolio, we have put together a simple github repository that provides the basic files you will need. In order to interact with the repository and build your own e-portfolio using quarto and github, you will need the following:</p>
 <ul>
 <li><p>A github account.</p></li>
 <li><p>Github deskptop (make sure you are logged in).</p></li>
@@ -232,7 +232,7 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><p>Navigate to the sample repository using the link above.</p></li>
 <li><p>Now ‘fork’ the repository - this will create a copy of all of the files on your github account. You can make changes to this ‘forked’ repository without affecting the original or getting things mixed up with your peers. Make sure you provide a descriptive name for the forked repo.</p></li>
-<li><p>Open up your Github Desktop app and navigate to ‘File &gt; Clone Repository’. This will show you all of the repositories that are available to be cloned based on your github account. Find the forked repo and clone it to a local path. You will get a pop-up that asks you how you plan to use this fork - make sure you select the ‘for my own purposes’ option.</p></li>
+<li><p>Open up your Github Desktop app and navigate to ‘File &gt; Clone Repository’. This will show you all of the repositories that are available to be cloned based on your github account. Find the forked repo and clone it to a local path. You will get a pop-up that asks you how you plan to use this fork - <strong>make sure you select the ‘for my own purposes’ option</strong>.</p></li>
 <li><p>In the Github Desktop app, click on the ‘Show in Explorer’ button - this will navigate to the folder on your computer where all the repo files are stored. This folder is where you will make changes to your E-Portfolio files.</p></li>
 <li><p>Open up an R-Studio session and click on ‘File &gt; Open File’. Navigate to your explorer folder with all of the repo files, and open up the ‘index.qmd’ file. Edit the file with your own profile picture (if you’d like), contact information, and introduction blurb. When you are finished editing the page, save the .qmd file and hit ‘render’. This will give you a preview of what the page will look like in your E-Portfolio. Repeat this step for the ‘resume.qmd’ file.</p></li>
 <li><p>In your Github Desktop, you will now notice that there are local changes to the repository files based on your edits. You can push these edits to your github by clicking ‘commit to main’.</p></li>
