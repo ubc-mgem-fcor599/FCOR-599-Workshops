@@ -1,0 +1,202 @@
+---
+title: "Leaflet"
+---
+
+```{r setup, include=FALSE}
+
+library(leaflet)
+library(raster)
+library(terra)
+library(htmlwidgets)
+library(htmltools)
+library(leafem)
+library(DT)
+library(kableExtra)
+library(leaflet.extras)
+library(leaflet.extras2)
+
+```
+
+```{r layers, include=FALSE}
+
+ntems2000 <- rast("C:/Users/melser/Documents/GitHub/rasters/CA_forest_VLCE2_2000/CA_forest_VLCE2_2000.tif")
+
+ntems2020 <- rast("C:/Users/melser/Documents/GitHub/rasters/CA_forest_VLCE2_2020/CA_forest_VLCE2_2020.tif")
+
+aoi <- vect("D:/VI.shp") %>% project(crs(ntems2020))
+
+ntems2000 <- crop(ntems2000, aoi, mask = TRUE)
+ntems2020 <- crop(ntems2020, aoi, mask = TRUE)
+
+ntems2000 <- terra::as.factor(ntems2000)
+ntems2020 <- terra::as.factor(ntems2020)
+
+ntems2000 <- terra::project(ntems2000, "+init=EPSG:4326")
+ntems2020 <- terra::project(ntems2020, "+init=EPSG:4326")
+
+df <- data.frame(
+  ID <- c(0, 20, 31, 33, 50, 80, 81, 100, 210, 220, 230),
+  name <- c("Unclassified", "Water", "Snow", "Exposed/Barren", "Shrubs", "Wetland", "Wetland-Treed", "Herbs", "Coniferous", "Broadleaf", "Mixed Wood")
+)
+
+colnames(df) <- c("ID", "Names")
+
+set.cats(ntems2000, value = df)
+set.cats(ntems2020, value = df)
+
+col <- c("#686868", "#3333FF", "#CCFFFF", "#996633", "#FFFF00",
+         "#993399", "#9933CC", "#CCFF33", "#006600", "#00CC00",
+         "#CC9900")
+
+coldf <- data.frame(
+  df[1],
+  col)
+
+coltab(ntems2000) <- coldf
+coltab(ntems2020) <- coldf
+
+```
+
+
+
+## **The Basics**
+
+Many software and coding packages can be used to create interactive maps. In this particular demo, we will show you an easy way to produce interactive maps in leaflet - a popular R package. Leaflet is intuitive, fast, and has many arguments that allow us to easily adjust the way in which we present our maps. In the example below, we used NTEMs land cover from 2020 to product a simple interactive map for Vancouver Island. In the code below, you will notice that we add in a basemap using the 'addProviderTiles' argument. You can browse for available leaflet basemaps here: <https://leaflet-extras.github.io/leaflet-providers/preview/>
+
+
+
+```{r leaflet, include=TRUE, warning = FALSE}
+
+
+l <- leaflet(width = 600, height = 600)%>%
+  
+  #lets use some base imagery from ESRI
+  addProviderTiles("Esri.WorldImagery") %>%
+  
+  #now lets add our NTEMS land cover from 2020
+  addRasterImage(ntems2020, 
+                 #you can increase the allowable size of the rast here
+                 maxBytes = 10 * 1024 *1024) %>%
+  #add a legend
+  addRasterLegend(ntems2020, opacity = 1)%>%
+  #add scale bar
+  addScaleBar(position = c("bottomleft"))
+
+
+```
+
+```{r map, echo=FALSE}
+l
+```
+
+
+
+<br> <br>
+
+## **Comparing/Showing Multiple Layers**
+
+Now let's step things up a notch, and add some additional content to our map. For the purposes of this demonstration, let's say you have been tasked with showcasing changes in land cover on Vancouver Island from 2000 to 2020. To do so, we can use 2 key leaflet functionalities: 1) adding a toggle menu - allowing us to switch between layers, 2) adding a 'slider', which we can use to visualize two layers side-by-side.
+
+1\) In order to add a toggle menu and provide NTEMs land cover of both 2000 and 2020 in our map, we do need to provide a name for our layers using the 'group' argument within the 'addRasterImage' function.
+
+
+
+```{r leaflet2, include=TRUE, warning = FALSE}
+
+
+l2 <- leaflet(width = 600, height = 600)%>%
+  
+  #lets use some base imagery from ESRI
+  addProviderTiles("Esri.WorldImagery") %>%
+  
+  #now lets add our NTEMS land cover from 2000
+  addRasterImage(ntems2000, 
+                 #you can increase the allowable size of the rast here
+                 maxBytes = 10 * 1024 *1024,
+                 #provide a name for the layer
+                 group = "LC-2000") %>%
+  
+  #now lets add our NTEMS land cover from 2020
+  addRasterImage(ntems2020, 
+                 #you can increase the allowable size of the rast here
+                 maxBytes = 10 * 1024 *1024,
+                 #provide a name for the layer
+                 group = "LC-2020") %>%
+  
+  #allow for layers to be toggles on/off by adding them to the layers control
+  addLayersControl(baseGroups = c("LC-2000","LC-2020")) %>%
+  
+  #add a legend
+  addRasterLegend(ntems2000, opacity = 1)%>%
+  
+  #add scale bar
+  addScaleBar(position = c("bottomleft"))
+
+
+```
+
+```{r map2, echo=FALSE}
+l2
+```
+
+
+
+<br> <br>
+
+2\) In order to visualize layers side-by-side and compare them using a window slider, we need to create a left and right pane, and assign our NTEMS land cover rasters to one of these panes.
+
+
+
+```{r leaflet3, include=TRUE, warning = FALSE}
+
+
+l3 <- leaflet(width = 600, height = 600)%>%
+  
+  #set up the two map panes
+  addMapPane("right", zIndex = 1) %>%
+  addMapPane("left",  zIndex = 2) %>%
+  
+  #add the ESRI basemap to both map panes
+  addProviderTiles("Esri.WorldImagery", group = "base", layerId = "baseid1", options = pathOptions(pane = "right")) %>%
+  addProviderTiles("Esri.WorldImagery", group = "base", layerId = "baseid2", options = pathOptions(pane = "left")) %>%
+  
+  #now lets add our NTEMS land cover from 2000
+  addRasterImage(ntems2000, 
+                 #you can increase the allowable size of the rast here
+                 maxBytes = 10 * 1024 *1024,
+                 #provide a name for the layer
+                 group = "LC-2000",
+                 #assign to a pane
+                 options = leafletOptions(pane = "left")) %>%
+  
+  #now lets add our NTEMS land cover from 2020
+  addRasterImage(ntems2020, 
+                 #you can increase the allowable size of the rast here
+                 maxBytes = 10 * 1024 *1024,
+                 #provide a name for the layer
+                 group = "LC-2020",
+                 #assign to a pane
+                 options = leafletOptions(pane = "right")) %>%
+  
+  #allow for layers to be toggles on/off by adding them to the layers control
+  addLayersControl(overlayGroups = c("LC-2000", "LC-2020")) %>%
+  
+  #add slider control
+  addSidebyside(layerId = "sidecontrols",
+                rightId = "baseid1",
+                leftId  = "baseid2",
+                options = list(padding = 0)) %>%
+  
+  #add a legend
+  addRasterLegend(ntems2000, opacity = 1)%>%
+  
+  #add scale bar
+  addScaleBar(position = c("bottomleft"))
+
+
+```
+
+```{r map3, echo=FALSE}
+l3
+```
+

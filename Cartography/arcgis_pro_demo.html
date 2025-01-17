@@ -173,7 +173,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#this-section-is-under-construction" id="toc-this-section-is-under-construction" class="nav-link active" data-scroll-target="#this-section-is-under-construction">This section is under construction</a></li>
+  <li><a href="#arcgis-pro-tips-and-tricks" id="toc-arcgis-pro-tips-and-tricks" class="nav-link active" data-scroll-target="#arcgis-pro-tips-and-tricks">ArcGIS Pro Tips and Tricks</a>
+  <ul class="collapse">
+  <li><a href="#projections" id="toc-projections" class="nav-link" data-scroll-target="#projections">Projections</a></li>
+  <li><a href="#inset-maps" id="toc-inset-maps" class="nav-link" data-scroll-target="#inset-maps">Inset Maps</a></li>
+  <li><a href="#legends" id="toc-legends" class="nav-link" data-scroll-target="#legends">Legends</a>
+  <ul class="collapse">
+  <li><a href="#adding-a-legend" id="toc-adding-a-legend" class="nav-link" data-scroll-target="#adding-a-legend">Adding a legend</a></li>
+  <li><a href="#customizing-your-legend" id="toc-customizing-your-legend" class="nav-link" data-scroll-target="#customizing-your-legend">Customizing your legend</a></li>
+  </ul></li>
+  <li><a href="#gridlines-and-graticules" id="toc-gridlines-and-graticules" class="nav-link" data-scroll-target="#gridlines-and-graticules">Gridlines and Graticules</a></li>
+  <li><a href="#north-arrow-and-scale-bar" id="toc-north-arrow-and-scale-bar" class="nav-link" data-scroll-target="#north-arrow-and-scale-bar">North Arrow and Scale Bar</a></li>
+  </ul></li>
+  <li><a href="#final-product" id="toc-final-product" class="nav-link" data-scroll-target="#final-product">Final Product</a></li>
+  <li><a href="#helpful-links" id="toc-helpful-links" class="nav-link" data-scroll-target="#helpful-links">Helpful Links</a></li>
   </ul>
 </nav>
     </div>
@@ -189,6 +202,12 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Evan Gerbrecht, BSc </p>
+          </div>
+  </div>
     
   
     
@@ -199,9 +218,89 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="this-section-is-under-construction" class="level1">
-<h1>This section is under construction</h1>
-<p>As MGEM students, you all have access to ArcGIS Pro, a powerful GIS software that allows users to perform geospatial tasks and create beautiful maps. This demo focuses on the map-making capabilities of ArcGIS Pro, and provides an easy reference guide for the implementation of core cartography concepts and best-practices.</p>
+<section id="arcgis-pro-tips-and-tricks" class="level1">
+<h1>ArcGIS Pro Tips and Tricks</h1>
+<p>As MGEM students, you all have access to ArcGIS Pro, a powerful GIS software that allows users to perform geospatial tasks and create beautiful maps. This demo focuses on the map-making capabilities of ArcGIS Pro and provides an easy reference guide for implementing core cartographic concepts and best practices. While you may have experience using ArcGIS either in or outside of MGEM, you can use this guide as a best practice resource to refer to either during your courses, or any time you’re trying to solve a tricky map.</p>
+<section id="projections" class="level2">
+<h2 class="anchored" data-anchor-id="projections">Projections</h2>
+<p>Displaying your map frame in an appropriate coordinate system is important for visualization. For example, the two photos below show very different projections, and while both are technically not wrong, the one using the Mercator is clearly much better suited for our data</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/robinson.PNG" class="img-fluid figure-img"></p>
+<figcaption>Robinson</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mercator.PNG" class="img-fluid figure-img"></p>
+<figcaption>Mercator</figcaption>
+</figure>
+</div>
+<p>You can change the projection of your map view by right-clicking on the ‘Map’ in your drawing order, and going to properties (below-left). Under the Coordinate Systems tab, you may then select a projection suitable for viewing your map (bottom-right).</p>
+<p>Tip: Using the search bar can be the fastest way to find a projection you’re looking for, but the layers drop-down will have all the projections of any layers on your map already ready for easy selection. You can also save your most common projections under <strong>Favorites</strong> if you find yourself using the same projections over and over.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/map_properties.PNG" class="img-fluid figure-img"></p>
+<figcaption>Selecting a projection</figcaption>
+</figure>
+</div>
+</section>
+<section id="inset-maps" class="level2">
+<h2 class="anchored" data-anchor-id="inset-maps">Inset Maps</h2>
+<p>In order to help our map-viewers out a little more, we can insert another map frame on our layout, showing where in Canada we are. To do so we will want to put this data in a separate ‘Map’ tab. To create one, simply click on the ‘New Map’ button on the top left of your Arc screen. Now that we have this new ’Map”, and have added our data, we can go back to our layout, and add our helpful extent map.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/inset.PNG" class="img-fluid figure-img"></p>
+<figcaption>Some of the helpful buttons for creating an inset map highlighted</figcaption>
+</figure>
+</div>
+<p>After selecting your layout, navigate to the ‘Insert’ tab on the top of your screen, and select ‘Map Frame’. This will give you an overview of all the maps you have created in your Arc Project, and will allow you to select one to add to your layout. We can now select the one created above, and add it to our layout by dragging a box in the spot where we wish to place it. You can then add elements such as leader lines, and separate scale bars if you feel it is appropriate.</p>
+</section>
+<section id="legends" class="level2">
+<h2 class="anchored" data-anchor-id="legends">Legends</h2>
+<section id="adding-a-legend" class="level3">
+<h3 class="anchored" data-anchor-id="adding-a-legend">Adding a legend</h3>
+<p>Legends are a fundamental component of any map. It is where we give the map-viewer the tools they need to interpret the data that we are presenting to them. Inserting a Legend is relatively straightforward – you can simply navigate to the ‘Insert’ tab for your layout, and click on ‘Legend’. However, once you have inserted a Legend, you may find it doesn’t look exactly appealing, and we may have to take some steps to clean things up a bit. First and foremost, there may be layers on display which we do not wish to include in our legend – to avoid clutter.</p>
+</section>
+<section id="customizing-your-legend" class="level3">
+<h3 class="anchored" data-anchor-id="customizing-your-legend">Customizing your legend</h3>
+<p>Customizing you legend can probably be one of the more frustrating things to do in ArcGIS. The quickest way to make changes is to use the properties of the legend, accessed by right clicking it and selecting the Properties option at the bottom. This will open a window on the right with lots and lots of options on things you can change. See this link for some helpful tips <a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/tips-and-tricks-for-working-with-legends-in-arcgs-pro/">Legends Tips</a></p>
+<p>Changing the name of your layers can be one of the easiest things to forget when creating a map in ArcGIS, but probably the biggest difference maker when creating a map. To do so, simply right click the layer to access its Properties. In the top option, General, there is a name bar where you can type whatever name you feel is best, the great thing about this is you can use spaces and capitalized letters which often isn’t the default with GIS!</p>
+</section>
+</section>
+<section id="gridlines-and-graticules" class="level2">
+<h2 class="anchored" data-anchor-id="gridlines-and-graticules">Gridlines and Graticules</h2>
+<p>It can sometimes be easy to forget that the people looking at your maps are not as familiar with the data, area, and topic as you are. People from all over the world map end up looking at your map, so it is always important to make sure everyone – regardless of their background knowledge – is able to interpret and read your map. For the example shown in this document so far, people from Eastern Canada may recognize the Hudson’s Bay area in the map, yet many of us may be initially confused as to where this study area is located. There are a few ways by which we can make this easier for our map-viewer to interpret. On of these ways is by inserting grid-lines which show lat/lon lines across our map. To do so, navigate to the ‘Grid’ option in the Insert bar for your layout, and select one of the grid options.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/grid.PNG" class="img-fluid figure-img"></p>
+<figcaption>Gridlines</figcaption>
+</figure>
+</div>
+<p>This will add grid-lines to our drawing order, as well as map view. Similarly to the legend, we can right click on the grid lines in our drawing order, select properties, and make adjustments as we wish to alter the appearance of thegrid lines (not shown here).</p>
+</section>
+<section id="north-arrow-and-scale-bar" class="level2">
+<h2 class="anchored" data-anchor-id="north-arrow-and-scale-bar">North Arrow and Scale Bar</h2>
+<p>Now that we have got ourselves a nice looking map, we have to add the finishing touches. No map is complete without the essential North Arrow and Scale Bars. Thankfuly, both are easy to add! Simply select the ‘North Arrow’ Dropdown at the top of your screen, and choose whichever strikes your fancy.</p>
+<p>For scale bars, simply select the ‘Scale Bar’ dropdown, select one of the available options, and drag a box where you would like to place it. Now it is important to note that when you add a scale bar or north arrow, it will do so based on the map frame you have selected in your layout. Since we are making use of an inset in this example, we will then need to make sure to add a second scale bar to show the scale of our inset. Simply select the inset map frame in the layout, and add a second scale bar – placing it in an appropriate spot.</p>
+</section>
+</section>
+<section id="final-product" class="level1">
+<h1>Final Product</h1>
+<p>In the end if you follow these basic steps you should end up with a beautiful map! While it takes time to tinker with each map to be perfect for the context and data you’re dealing with, the result is always worth it. Not each bit listed in this will be essential each time, so always consider scale and context of your areas.</p>
+<p>If you’re still having issues, ArcGIS has lots and lots of great online resources for map making.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/goodmap.png" class="img-fluid figure-img"></p>
+<figcaption>Solid map of Vancouver Island</figcaption>
+</figure>
+</div>
+</section>
+<section id="helpful-links" class="level1">
+<h1>Helpful Links</h1>
+<p><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/tips-and-tricks-for-working-with-legends-in-arcgs-pro/">Help with Legends</a></p>
+<p><a href="https://pro.arcgis.com/en/pro-app/latest/help/layouts/work-with-a-grid.htm">Help with Graticules</a></p>
+<p><a href="https://learn.arcgis.com/en/projects/cartographic-creations-make-an-inset-map/">Inset Maps</a></p>
 
 
 </section>

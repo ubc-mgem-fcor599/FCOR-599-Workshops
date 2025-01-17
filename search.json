@@ -97,7 +97,7 @@
     "href": "Cartography/arcgis_pro_demo.html",
     "title": "ArcGIS Pro Demo",
     "section": "",
-    "text": "This section is under construction\nAs MGEM students, you all have access to ArcGIS Pro, a powerful GIS software that allows users to perform geospatial tasks and create beautiful maps. This demo focuses on the map-making capabilities of ArcGIS Pro, and provides an easy reference guide for the implementation of core cartography concepts and best-practices.",
+    "text": "As MGEM students, you all have access to ArcGIS Pro, a powerful GIS software that allows users to perform geospatial tasks and create beautiful maps. This demo focuses on the map-making capabilities of ArcGIS Pro and provides an easy reference guide for implementing core cartographic concepts and best practices. While you may have experience using ArcGIS either in or outside of MGEM, you can use this guide as a best practice resource to refer to either during your courses, or any time you’re trying to solve a tricky map.\n\n\nDisplaying your map frame in an appropriate coordinate system is important for visualization. For example, the two photos below show very different projections, and while both are technically not wrong, the one using the Mercator is clearly much better suited for our data\n\n\n\nRobinson\n\n\n\n\n\nMercator\n\n\nYou can change the projection of your map view by right-clicking on the ‘Map’ in your drawing order, and going to properties (below-left). Under the Coordinate Systems tab, you may then select a projection suitable for viewing your map (bottom-right).\nTip: Using the search bar can be the fastest way to find a projection you’re looking for, but the layers drop-down will have all the projections of any layers on your map already ready for easy selection. You can also save your most common projections under Favorites if you find yourself using the same projections over and over.\n\n\n\nSelecting a projection\n\n\n\n\n\nIn order to help our map-viewers out a little more, we can insert another map frame on our layout, showing where in Canada we are. To do so we will want to put this data in a separate ‘Map’ tab. To create one, simply click on the ‘New Map’ button on the top left of your Arc screen. Now that we have this new ’Map”, and have added our data, we can go back to our layout, and add our helpful extent map.\n\n\n\nSome of the helpful buttons for creating an inset map highlighted\n\n\nAfter selecting your layout, navigate to the ‘Insert’ tab on the top of your screen, and select ‘Map Frame’. This will give you an overview of all the maps you have created in your Arc Project, and will allow you to select one to add to your layout. We can now select the one created above, and add it to our layout by dragging a box in the spot where we wish to place it. You can then add elements such as leader lines, and separate scale bars if you feel it is appropriate.\n\n\n\n\n\nLegends are a fundamental component of any map. It is where we give the map-viewer the tools they need to interpret the data that we are presenting to them. Inserting a Legend is relatively straightforward – you can simply navigate to the ‘Insert’ tab for your layout, and click on ‘Legend’. However, once you have inserted a Legend, you may find it doesn’t look exactly appealing, and we may have to take some steps to clean things up a bit. First and foremost, there may be layers on display which we do not wish to include in our legend – to avoid clutter.\n\n\n\nCustomizing you legend can probably be one of the more frustrating things to do in ArcGIS. The quickest way to make changes is to use the properties of the legend, accessed by right clicking it and selecting the Properties option at the bottom. This will open a window on the right with lots and lots of options on things you can change. See this link for some helpful tips Legends Tips\nChanging the name of your layers can be one of the easiest things to forget when creating a map in ArcGIS, but probably the biggest difference maker when creating a map. To do so, simply right click the layer to access its Properties. In the top option, General, there is a name bar where you can type whatever name you feel is best, the great thing about this is you can use spaces and capitalized letters which often isn’t the default with GIS!\n\n\n\n\nIt can sometimes be easy to forget that the people looking at your maps are not as familiar with the data, area, and topic as you are. People from all over the world map end up looking at your map, so it is always important to make sure everyone – regardless of their background knowledge – is able to interpret and read your map. For the example shown in this document so far, people from Eastern Canada may recognize the Hudson’s Bay area in the map, yet many of us may be initially confused as to where this study area is located. There are a few ways by which we can make this easier for our map-viewer to interpret. On of these ways is by inserting grid-lines which show lat/lon lines across our map. To do so, navigate to the ‘Grid’ option in the Insert bar for your layout, and select one of the grid options.\n\n\n\nGridlines\n\n\nThis will add grid-lines to our drawing order, as well as map view. Similarly to the legend, we can right click on the grid lines in our drawing order, select properties, and make adjustments as we wish to alter the appearance of thegrid lines (not shown here).\n\n\n\nNow that we have got ourselves a nice looking map, we have to add the finishing touches. No map is complete without the essential North Arrow and Scale Bars. Thankfuly, both are easy to add! Simply select the ‘North Arrow’ Dropdown at the top of your screen, and choose whichever strikes your fancy.\nFor scale bars, simply select the ‘Scale Bar’ dropdown, select one of the available options, and drag a box where you would like to place it. Now it is important to note that when you add a scale bar or north arrow, it will do so based on the map frame you have selected in your layout. Since we are making use of an inset in this example, we will then need to make sure to add a second scale bar to show the scale of our inset. Simply select the inset map frame in the layout, and add a second scale bar – placing it in an appropriate spot.",
     "crumbs": [
       "Cartography",
       "ArcGIS Pro Demo"
@@ -108,7 +108,7 @@
     "href": "Cartography/art_of_maps.html",
     "title": "The Art of Map Making",
     "section": "",
-    "text": "Although we rightfully place emphasis on ensuring the scientific integrity of maps in this course and program, the artistic component of map making is a key component of science communication, and should not be overlooked. Cartography is the art and science of map-making. Finding that balance between art and science can be very hard, and will look different for every single person that makes maps. However, finding that balance is key to creating beautiful maps that people will want to look at, but also effectively communicate your data and your take home message.",
+    "text": "Although the emphasis in this course and programme is rightly on ensuring the scientific integrity of maps, the artistic component of mapmaking is a key component of science communication and should not be overlooked. Cartography is the art and science of mapmaking. Finding the balance between art and science can be very difficult and will look different for each individual map maker. However, finding this balance is key to creating beautiful maps that people want to look at, but that also effectively communicate your data and your take-home message.\nMap making, especially cartography, is an art as we have just discussed. There are so many beautiful maps and amazing ways to display data or information. While here at MGEM, or in any GIS position or work you do, it’s always helpful and inspiring to find maps that tell a story visually. These can either inspire you to make better maps, or maybe even give you ideas about how you might want to visualise data.\n\n\nThere are many beautiful maps out in the world that are more art than science but that doesn’t disqualify them from being called a map. Here are a few examples of what might not traditionally be called maps in a scientific sense, but can be used as either a cool visualization or maybe even some inspiration for your work:\n\n\n\n\n\n\n\nWhistler village, Canada, by James Niehues\n\n\nMaps like the one above are a great example that not every map needs to have every single detail shown, like we’ve talked about “all maps are lies”, so sometimes you need to lie a little to better convey a message and visualize your work.\n\n\n\n3D map of Manhattan by Luis Dilger\n\n\nWhile these shift a little bit from what we talked about in the cartography section of today, hopefully these can serve as a reminder that map making is an art its core, don’t be afraid to put your own style and touch on your maps!",
     "crumbs": [
       "Cartography",
       "The Art of Map Making"
@@ -333,7 +333,7 @@
     "href": "Cartography/art_of_maps.html#data",
     "title": "The Art of Map Making",
     "section": "Data",
-    "text": "Data",
+    "text": "Data\nWhile the data you chose to map and display isn’t something that will or won’t be mandated and controlled, it’s always important think about what data you want to map, and why. For example, a study area map is very common and almost expected for many journals or papers in GIS and remote sensing due to the fact that giving the reader an idea of where the study is can be essential for understanding the context of the work.\nAs for everything besides a study map, a good rule of thumb on whether to make a map is if there is a spatial element in your data, then its probably a good idea! However, always keep your maps as simple as you can, an overcrowded map is one of the easiest ways to have your reader simply ignore your map or not get the message\n\n\n\nAn example of a map with maybe too much data\n\n\nWhen it comes to how much, or which data, to add on your map always keep things as simple as possible and it’s never a bad idea to just make a few maps.",
     "crumbs": [
       "Cartography",
       "The Art of Map Making"
@@ -344,10 +344,76 @@
     "href": "Cartography/art_of_maps.html#colour",
     "title": "The Art of Map Making",
     "section": "Colour",
-    "text": "Colour",
+    "text": "Colour\nThe colours you chose for you map, like many things in cartography, is up to you but you can definitely get it wrong. For example, when it comes to publication, sometimes you may need to have colours that are colourblind friendly or even can print in black and white. However, those may be laid out for you in plain to read rules, but today I think its best to think of some rules or guidelines that aren’t as obvious. Such as for land classification:\n\nWater is blue\nGreen for vegetation\nBrown for mountains or rough terrain\n\nSounds simple enough, but easy to stick to ideas like this take just a second to step back and think of which colour you’re choosing and why. What data your representing can also help decide your colour, for example a map showing hotter temperatures in blue might not be trusted as much as one that shows the same in red….\nAs for choosing a colour ramp that is diverging or sequential depends on your range of data, but resources such as ColourBrewer are an amazing place to go back for inspiration and any help:\nColourBrewer",
     "crumbs": [
       "Cartography",
       "The Art of Map Making"
+    ]
+  },
+  {
+    "objectID": "Cartography/art_of_maps.html#examples-of-artistic-maps",
+    "href": "Cartography/art_of_maps.html#examples-of-artistic-maps",
+    "title": "The Art of Map Making",
+    "section": "",
+    "text": "There are many beautiful maps out in the world that are more art than science but that doesn’t disqualify them from being called a map. Here are a few examples of what might not traditionally be called maps in a scientific sense, but can be used as either a cool visualization or maybe even some inspiration for your work:\n\n\n\n\n\n\n\nWhistler village, Canada, by James Niehues\n\n\nMaps like the one above are a great example that not every map needs to have every single detail shown, like we’ve talked about “all maps are lies”, so sometimes you need to lie a little to better convey a message and visualize your work.\n\n\n\n3D map of Manhattan by Luis Dilger\n\n\nWhile these shift a little bit from what we talked about in the cartography section of today, hopefully these can serve as a reminder that map making is an art its core, don’t be afraid to put your own style and touch on your maps!",
+    "crumbs": [
+      "Cartography",
+      "The Art of Map Making"
+    ]
+  },
+  {
+    "objectID": "Cartography/arcgis_pro_demo.html#projections",
+    "href": "Cartography/arcgis_pro_demo.html#projections",
+    "title": "ArcGIS Pro Demo",
+    "section": "",
+    "text": "Displaying your map frame in an appropriate coordinate system is important for visualization. For example, the two photos below show very different projections, and while both are technically not wrong, the one using the Mercator is clearly much better suited for our data\n\n\n\nRobinson\n\n\n\n\n\nMercator\n\n\nYou can change the projection of your map view by right-clicking on the ‘Map’ in your drawing order, and going to properties (below-left). Under the Coordinate Systems tab, you may then select a projection suitable for viewing your map (bottom-right).\nTip: Using the search bar can be the fastest way to find a projection you’re looking for, but the layers drop-down will have all the projections of any layers on your map already ready for easy selection. You can also save your most common projections under Favorites if you find yourself using the same projections over and over.\n\n\n\nSelecting a projection",
+    "crumbs": [
+      "Cartography",
+      "ArcGIS Pro Demo"
+    ]
+  },
+  {
+    "objectID": "Cartography/arcgis_pro_demo.html#inset-maps",
+    "href": "Cartography/arcgis_pro_demo.html#inset-maps",
+    "title": "ArcGIS Pro Demo",
+    "section": "",
+    "text": "In order to help our map-viewers out a little more, we can insert another map frame on our layout, showing where in Canada we are. To do so we will want to put this data in a separate ‘Map’ tab. To create one, simply click on the ‘New Map’ button on the top left of your Arc screen. Now that we have this new ’Map”, and have added our data, we can go back to our layout, and add our helpful extent map.\n\n\n\nSome of the helpful buttons for creating an inset map highlighted\n\n\nAfter selecting your layout, navigate to the ‘Insert’ tab on the top of your screen, and select ‘Map Frame’. This will give you an overview of all the maps you have created in your Arc Project, and will allow you to select one to add to your layout. We can now select the one created above, and add it to our layout by dragging a box in the spot where we wish to place it. You can then add elements such as leader lines, and separate scale bars if you feel it is appropriate.",
+    "crumbs": [
+      "Cartography",
+      "ArcGIS Pro Demo"
+    ]
+  },
+  {
+    "objectID": "Cartography/arcgis_pro_demo.html#legends",
+    "href": "Cartography/arcgis_pro_demo.html#legends",
+    "title": "ArcGIS Pro Demo",
+    "section": "",
+    "text": "Legends are a fundamental component of any map. It is where we give the map-viewer the tools they need to interpret the data that we are presenting to them. Inserting a Legend is relatively straightforward – you can simply navigate to the ‘Insert’ tab for your layout, and click on ‘Legend’. However, once you have inserted a Legend, you may find it doesn’t look exactly appealing, and we may have to take some steps to clean things up a bit. First and foremost, there may be layers on display which we do not wish to include in our legend – to avoid clutter.\n\n\n\nCustomizing you legend can probably be one of the more frustrating things to do in ArcGIS. The quickest way to make changes is to use the properties of the legend, accessed by right clicking it and selecting the Properties option at the bottom. This will open a window on the right with lots and lots of options on things you can change. See this link for some helpful tips Legends Tips\nChanging the name of your layers can be one of the easiest things to forget when creating a map in ArcGIS, but probably the biggest difference maker when creating a map. To do so, simply right click the layer to access its Properties. In the top option, General, there is a name bar where you can type whatever name you feel is best, the great thing about this is you can use spaces and capitalized letters which often isn’t the default with GIS!",
+    "crumbs": [
+      "Cartography",
+      "ArcGIS Pro Demo"
+    ]
+  },
+  {
+    "objectID": "Cartography/arcgis_pro_demo.html#gridlines-and-graticules",
+    "href": "Cartography/arcgis_pro_demo.html#gridlines-and-graticules",
+    "title": "ArcGIS Pro Demo",
+    "section": "",
+    "text": "It can sometimes be easy to forget that the people looking at your maps are not as familiar with the data, area, and topic as you are. People from all over the world map end up looking at your map, so it is always important to make sure everyone – regardless of their background knowledge – is able to interpret and read your map. For the example shown in this document so far, people from Eastern Canada may recognize the Hudson’s Bay area in the map, yet many of us may be initially confused as to where this study area is located. There are a few ways by which we can make this easier for our map-viewer to interpret. On of these ways is by inserting grid-lines which show lat/lon lines across our map. To do so, navigate to the ‘Grid’ option in the Insert bar for your layout, and select one of the grid options.\n\n\n\nGridlines\n\n\nThis will add grid-lines to our drawing order, as well as map view. Similarly to the legend, we can right click on the grid lines in our drawing order, select properties, and make adjustments as we wish to alter the appearance of thegrid lines (not shown here).",
+    "crumbs": [
+      "Cartography",
+      "ArcGIS Pro Demo"
+    ]
+  },
+  {
+    "objectID": "Cartography/arcgis_pro_demo.html#north-arrow-and-scale-bar",
+    "href": "Cartography/arcgis_pro_demo.html#north-arrow-and-scale-bar",
+    "title": "ArcGIS Pro Demo",
+    "section": "",
+    "text": "Now that we have got ourselves a nice looking map, we have to add the finishing touches. No map is complete without the essential North Arrow and Scale Bars. Thankfuly, both are easy to add! Simply select the ‘North Arrow’ Dropdown at the top of your screen, and choose whichever strikes your fancy.\nFor scale bars, simply select the ‘Scale Bar’ dropdown, select one of the available options, and drag a box where you would like to place it. Now it is important to note that when you add a scale bar or north arrow, it will do so based on the map frame you have selected in your layout. Since we are making use of an inset in this example, we will then need to make sure to add a second scale bar to show the scale of our inset. Simply select the inset map frame in the layout, and add a second scale bar – placing it in an appropriate spot.",
+    "crumbs": [
+      "Cartography",
+      "ArcGIS Pro Demo"
     ]
   }
 ]
