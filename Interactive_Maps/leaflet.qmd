@@ -59,7 +59,7 @@ coltab(ntems2020) <- coldf
 
 ## **The Basics**
 
-Many software and coding packages can be used to create interactive maps. In this particular demo, we will show you an easy way to produce interactive maps in leaflet - a popular R package. Leaflet is intuitive, fast, and has many arguments that allow us to easily adjust the way in which we present our maps. In the example below, we used NTEMs land cover from 2020 to produce a simple interactive map for Vancouver Island. In the code below, you will notice that we add in a basemap using the 'addProviderTiles' argument. You can browse for available leaflet basemaps here: <https://leaflet-extras.github.io/leaflet-providers/preview/>
+Many software and coding packages can be used to create interactive maps. In this particular demo, we will show you an easy way to produce interactive maps in leaflet - a popular R package. Leaflet is intuitive, fast, and has many arguments that allow us to easily adjust the way in which we present our maps. In the example below, we used [NTEMs land cover](https://opendata.nfis.org/mapserver/nfis-change_eng.html) from 2020 to produce a simple interactive map for Vancouver Island. In the code below, you will notice that we add in a basemap using the 'addProviderTiles' argument. You can browse for available leaflet basemaps here: <https://leaflet-extras.github.io/leaflet-providers/preview/>
 
 ```{r leaflet, include=TRUE, warning = FALSE}
 
