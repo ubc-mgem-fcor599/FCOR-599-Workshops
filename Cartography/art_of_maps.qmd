@@ -46,7 +46,7 @@ The colours you chose for you map, like many things in cartography, is up to you
 
 Sounds simple enough, but easy to stick to ideas like this take just a second to step back and think of which colour you're choosing and why. What data your representing can also help decide your colour, for example a map showing hotter temperatures in blue might not be trusted as much as one that shows the same in red....
 
-As for chosing a colour ramp that is diverging or sequential depends on your range of data, but resoucres such as ColourBrewer are an amazing place to go back for inspiration and any help:
+As for choosing a colour ramp that is diverging or sequential depends on your range of data, but resources such as ColourBrewer are an amazing place to go back for inspiration and any help:
 
 [ColourBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)
 
