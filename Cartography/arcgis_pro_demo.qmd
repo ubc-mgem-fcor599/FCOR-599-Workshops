@@ -1,7 +1,22 @@
 ---
 title: "ArcGIS Pro Demo"
+authors:
+  - name: Evan Gerbrecht
+    degrees: BSc
 ---
 
-# This section is under construction
+# ArcGIS Pro Tips and Tricks
 
-As MGEM students, you all have access to ArcGIS Pro, a powerful GIS software that allows users to perform geospatial tasks and create beautiful maps. This demo focuses on the map-making capabilities of ArcGIS Pro, and provides an easy reference guide for the implementation of core cartography concepts and best-practices.
+As MGEM students, you all have access to ArcGIS Pro, a powerful GIS software that allows users to perform geospatial tasks and create beautiful maps. This demo focuses on the map-making capabilities of ArcGIS Pro and provides an easy reference guide for implementing core cartographic concepts and best practices. While you may have experience using ArcGIS either in or outside of MGEM, you can use this guide as a best practice resource to refer to either during your courses, or any time you're trying to solve a tricky map.
+
+# Projections
+
+Displaying your map frame in an appropriate coordinate system is important for visualization. For example, the map frame below (left) is projected using the Robinson (world) projection. Although you can clearly identify that we are looking at Canada, the map projection (Canada Albers Equal Area Conic) used in the map frame on the right offers a much more pleasant view of our data.
+
+*Canada map* - change to be Vancouver Island
+
+You can change the projection of your map view by right-clicking on the 'Map' in your drawing order, and going to properties (below-left). Under the Coordinate Systems tab, you may then select a projection suitable for viewing your map (bottom-right).
+
+Tip: Using the search bar can be the fastest way to find a projection you're looking for, but the layers drop-down will have all the projections of any layers on your map already ready for easy selection. You can also save your most common projections under **Favorites** if you find yourself using the same projections over and over.
+
+*Projection photo*

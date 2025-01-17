@@ -4,13 +4,27 @@ title: "The Art of Map Making"
 
 # The Art of Map Making
 
-Although we rightfully place emphasis on ensuring the scientific integrity of maps in this course and program, the artistic component of map making is a key component of science communication, and should not be overlooked. Cartography is the art and science of map-making. Finding that balance between art and science can be very hard, and will look different for every single person that makes maps. However, finding that balance is key to creating beautiful maps that people will want to look at, but also effectively communicate your data and your take home message.
+Although the emphasis in this course and programme is rightly on ensuring the scientific integrity of maps, the artistic component of mapmaking is a key component of science communication and should not be overlooked. Cartography is the art and science of mapmaking. Finding the balance between art and science can be very difficult and will look different for each individual map maker. However, finding this balance is key to creating beautiful maps that people want to look at, but that also effectively communicate your data and your take-home message.
+
+Map making, especially cartography, is an art as we have just discussed. There are so many beautiful maps and amazing ways to display data or information. While here at MGEM, or in any GIS position or work you do, it's always helpful and inspiring to find maps that tell a story visually. These can either inspire you to make better maps, or maybe even give you ideas about how you might want to visualise data.
+
+## Examples of Artistic Maps
+
+[![Whistler village, Canada, by James Niehues](images/Ski_Map_Whistler.jpg){fig-align="center"}](https://jamesniehues.com/)
+
+Maps like the one above are a great example that not every map needs to have **every single detail** shown, like we've talked about "all maps are lies", so sometimes you need to lie a little to better convey a message and visualize your work.
+
+![3D map of Manhattan by Luis Dilger](images/3D_NewYork.jpg){fig-align="center"}
 
 # Map Making for Academia
 
-While making pretty and aesthetically pleasing should be one of your top priorities, something to consider even more than that when creating a map is to think of the audience or intended purpose of this map.
+While making pretty and aesthetically pleasing should be one of your top priorities, something to consider even more than that when creating a map is to think of the audience or intended purpose of this map. Most importantly, always pay attention to any requirements for maps in academia or journal you are submitting to. Similarly, if you work in industry or something similar, you will likely be given guidelines on how to make a map or what your potential employer is looking for.
 
 ## Data
+
+While the data you chose to map and display isn't something that will or won't be mandated and controlled, it's always important think about what data you want to map, and why. For example, a study area map is very common and almost expected for many journals or papers in GIS and remote sensing due to the fact that giving the reader an idea of where the study is can be essential for understanding the context of the work.
+
+As for everything besides a study map
 
 ## Colour
 
