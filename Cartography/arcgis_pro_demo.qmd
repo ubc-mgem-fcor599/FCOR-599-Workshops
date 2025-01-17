@@ -9,7 +9,7 @@ authors:
 
 As MGEM students, you all have access to ArcGIS Pro, a powerful GIS software that allows users to perform geospatial tasks and create beautiful maps. This demo focuses on the map-making capabilities of ArcGIS Pro and provides an easy reference guide for implementing core cartographic concepts and best practices. While you may have experience using ArcGIS either in or outside of MGEM, you can use this guide as a best practice resource to refer to either during your courses, or any time you're trying to solve a tricky map.
 
-# Projections
+## Projections
 
 Displaying your map frame in an appropriate coordinate system is important for visualization. For example, the map frame below (left) is projected using the Robinson (world) projection. Although you can clearly identify that we are looking at Canada, the map projection (Canada Albers Equal Area Conic) used in the map frame on the right offers a much more pleasant view of our data.
 
@@ -20,3 +20,27 @@ You can change the projection of your map view by right-clicking on the 'Map' in
 Tip: Using the search bar can be the fastest way to find a projection you're looking for, but the layers drop-down will have all the projections of any layers on your map already ready for easy selection. You can also save your most common projections under **Favorites** if you find yourself using the same projections over and over.
 
 *Projection photo*
+
+## Inset Maps
+
+In order to help our map-viewers out a little more, we can insert another map frame on our layout, showing where in Canada we are. To do so we will want to put this data in a separate 'Map' tab. To create one, simply click on the 'New Map' button on the top left of your Arc screen. Now that we have this new 'Map", and have added our data, we can go back to our layout, and add our helpful extent map.
+
+After selecting your layout, navigate to the 'Insert' tab on the top of your screen, and select 'Map Frame'. This will give you an overview of all the maps you have created in your Arc Project, and will allow you to select one to add to your layout. We can now select the one created above, and add it to our layout by dragging a box in the spot where we wish to place it.
+
+## Legends
+
+### Adding a legend
+
+Legends are a fundamental component of any map. It is where we give the map-viewer the tools they need to interpret the data that we are presenting to them. Inserting a Legend is relatively straightforward -- you can simply navigate to the 'Insert' tab for your layout, and click on 'Legend'. However, once you have inserted a Legend, you may find it doesn't look exactly appealing, and we may have to take some steps to clean things up a bit. First and foremost, there may be layers on display which we do not wish to include in our legend -- to avoid clutter.
+
+### Customizing your legend 
+
+## Gridlines and Graticules 
+
+When should you add
+
+## North Arrow and Scale Bar
+
+## Aesthetics and Weighting
+
+# Practice Yourself

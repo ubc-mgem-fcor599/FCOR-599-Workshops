@@ -10,11 +10,15 @@ Map making, especially cartography, is an art as we have just discussed. There a
 
 ## Examples of Artistic Maps
 
+There are many beautiful maps out in the world that are more art than science but that doesn't disqualify them from being called a map. Here are a few examples of what might not traditionally be called maps in a scientific sense, but can be used as either a cool visualization or maybe even some inspiration for your work:
+
 [![Whistler village, Canada, by James Niehues](images/Ski_Map_Whistler.jpg){fig-align="center"}](https://jamesniehues.com/)
 
 Maps like the one above are a great example that not every map needs to have **every single detail** shown, like we've talked about "all maps are lies", so sometimes you need to lie a little to better convey a message and visualize your work.
 
 ![3D map of Manhattan by Luis Dilger](images/3D_NewYork.jpg){fig-align="center"}
+
+While these shift a little bit from what we talked about in the cartography section of today, hopefully these can serve as a reminder that map making is an art its core, don't be afraid to put your own style and touch on your maps!
 
 # Map Making for Academia
 
@@ -24,9 +28,27 @@ While making pretty and aesthetically pleasing should be one of your top priorit
 
 While the data you chose to map and display isn't something that will or won't be mandated and controlled, it's always important think about what data you want to map, and why. For example, a study area map is very common and almost expected for many journals or papers in GIS and remote sensing due to the fact that giving the reader an idea of where the study is can be essential for understanding the context of the work.
 
-As for everything besides a study map
+As for everything besides a study map, a good rule of thumb on whether to make a map is if there is a spatial element in your data, then its probably a good idea! However, always keep your maps as simple as you can, an overcrowded map is one of the easiest ways to have your reader simply ignore your map or not get the message
+
+![An example of a map with maybe too much data](images/overcrowdedmap.png)
+
+When it comes to how much, or which data, to add on your map always keep things as simple as possible and it's never a bad idea to just make a few maps.
 
 ## Colour
+
+The colours you chose for you map, like many things in cartography, is up to you but you can definitely get it wrong. For example, when it comes to publication, sometimes you may need to have colours that are colourblind friendly or even can print in black and white. However, those may be laid out for you in plain to read rules, but today I think its best to think of some rules or guidelines that aren't as obvious. Such as for land classification:
+
+-   Water is blue
+
+-   Green for vegetation
+
+-   Brown for mountains or rough terrain
+
+Sounds simple enough, but easy to stick to ideas like this take just a second to step back and think of which colour you're choosing and why. What data your representing can also help decide your colour, for example a map showing hotter temperatures in blue might not be trusted as much as one that shows the same in red....
+
+As for chosing a colour ramp that is diverging or sequential depends on your range of data, but resoucres such as ColourBrewer are an amazing place to go back for inspiration and any help:
+
+[ColourBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)
 
 # Helpful Links and Resources
 
