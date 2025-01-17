@@ -45,9 +45,11 @@ Before we begin, make sure you have Github desktop installed on your device, tha
 
 4.  In the Github Desktop app, click on the 'Show in Explorer' button - this will navigate to the folder on your computer where all the repo files are stored. This folder is where you will make changes to your E-Portfolio files.
 
-5.  Open up an R-Studio session and click on 'File \> Open File'. Navigate to your explorer folder with all of the repo files, and open up the 'index.qmd' file. Edit the file with your own profile picture (if you'd like), contact information, and introduction blurb. When you are finished editing the page, save the .qmd file and hit 'render'. This will give you a preview of what the page will look like in your E-Portfolio. Repeat this step for the 'resume.qmd' file.
+5.  Open up an R-Studio session and click on 'File \> Open File'. Navigate to your explorer folder with all of the repo files, and open the "\_quarto.yml" file. This file controls the indexing of your E-Portfolio. At the top, you will notice there is a file path for your output directory - change this to the folder containing your cloned repository and save the file.
 
-6.  In your Github Desktop, you will now notice that there are local changes to the repository files based on your edits. You can push these edits to your github by clicking 'commit to main'.
+6.  Next, open up the 'index.qmd' file. Edit the file with your own profile picture (if you'd like), contact information, and introduction blurb. When you are finished editing the page, save the .qmd file and hit 'render'. This will give you a preview of what the page will look like in your E-Portfolio. Repeat this step for the 'resume.qmd' file.
+
+7.  In your Github Desktop, you will now notice that there are local changes to the repository files based on your edits. You can push these edits to your github by clicking 'commit to main'.
 
 In order to customize your E-Portfolio, we encourage you to review the following resources:
 
