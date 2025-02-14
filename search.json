@@ -276,7 +276,7 @@
     "href": "CodingCrossover/scripts/supervised_classification.html#questions",
     "title": "Supervised Image Classification in Python",
     "section": "Questions",
-    "text": "Questions\nQuestion 1 - Why is it important to use the same training and validation data when comparing different model outputs?\nQuestion 2 - Which classifier performed best with your data? Why do you think this is?"
+    "text": "Questions\nQuestion 1 - Why is it important to use the same training and validation data when comparing different model outputs?\nQuestion 2 - Which classifier performed best with your data? Why do you think this is?\nScreenshot - Save a screenshot of the map from your best model."
   },
   {
     "objectID": "CodingCrossover/codingcrossover.html#key-differences-in-python-vs.-r",
