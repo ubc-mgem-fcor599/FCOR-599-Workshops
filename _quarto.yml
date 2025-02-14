@@ -24,6 +24,8 @@ website:
         contents:
           - Cartography/art_of_maps.qmd
           - Cartography/arcgis_pro_demo.qmd
+      - text: "Shiny"
+        href: Shiny/shiny.qmd
       
       
           

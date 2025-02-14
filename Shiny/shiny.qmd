@@ -1,0 +1,100 @@
+---
+title: "Point Cloud Visualization and Shiny Apps"
+author: Liam Irwin
+about:
+  template: marquee
+  image-width: 10em
+  links: 
+    - icon: envelope-at
+      text: Email
+      href: mailto:liamakirwin@gmail.com
+---
+
+## [[Download Presentation Slides (.pdf)]{.underline}](content/Point Cloud Visualization and Shiny Apps with Liam.pdf "No GIFS because its a PDF :(")
+
+## [Point Cloud Visualization]{.underline}
+
+### Rotating Point Clouds with lidR
+
+![Example of a GIF you can produce! (Please don't use this exact one for submission)](images/example_gif.gif){fig-align="center" width="500"}
+
+[**Download the Rotating LAS GIF Script and sample data (.zip)**](content/rotating_las_gif.zip)
+
+**Contains:**
+
+rotating_gif.R - an R script containing the rotating GIF from las/laz function
+
+rotating_las_gif.Rproj - an R project file, use this to ensure the example paths work\
+las_ex\\ - folder containing five example 400m2 plots of [drone lidar](https://enterprise.dji.com/zenmuse-l2 "Data collected using the DJI L2 in central British Columbia") data to play with
+
+**Instructions:**
+
+1.  Download and extract contents to a folder
+2.  Open the rotating_las_gif R Project using RStudio
+3.  Open rotating_gif.R in RStudio, run the script to generate your first gif
+4.  Play around with different options until you're happy with your gif
+
+### Potree
+
+![](images/potree_ex.png){fig-align="center" width="601"}
+
+-   [Check out Potree](https://github.com/potree)
+
+-   [Check out Potree Desktop](https://github.com/potree/PotreeDesktop) (not recommended for UBC laptops, requires node.js install)
+
+-   [Check out these Potree examples](https://potree.github.io/) (find a cool one for your assignment)
+
+[**River example**](https://explore-research.uibk.ac.at/geodesy/geoai/potree/scenes/Loosdorf_Pielach.html)
+
+## [Shiny Apps]{.underline}
+
+### **The TreeDetectoR Shiny App**
+
+![Tree detection in a Shiny app, try it yourself below!](images/itd_shiny.png){alt="Tree detection in a Shiny app, try it yourself below!" fig-align="center"}
+
+[**Download the ITD example ShinyApp (.zip)**](content/itd_shiny.zip)
+
+**Contains:**
+
+itd_shiny.R - an R script containing the tree detection Shiny App components
+
+itd_shiny.Rproj - an R project file, use this to ensure the example paths work\
+data/chm_ext - four example 0.25 m Canopy Height Models (CHM)
+
+**Instructions:**
+
+1.  Download and extract contents to a folder
+2.  Open the itd_shiny R Project using RStudio
+3.  Open itd_shiny.R in RStudio and run entire script to initate the shiny app
+4.  Load an example CHM (or your own) and play around
+
+### **More resources**
+
+-   [Getting started with shinyapps.io (web hosting)](https://shiny.posit.co/r/articles/share/shinyapps/)
+
+-   Read the Shiny textbook, there is no better resource.
+
+![Mastering Shiny - Free textbook by Hadley Wickham](images/textbook.jpg){alt="Mastering Shiny - Free textbook by Hadley Wickham" fig-align="center" width="250"}
+
+## Deliverables
+
+-   Take three PNG screenshots of tree detection results from the ITD shiny app
+
+    -   Try out different window sizes, visualization options etc
+
+-   Take a screenshot of your favourite [Potree example](https://github.com/potree/potree?tab=readme-ov-file#examples) point cloud, write two sentences about why you found it interesting or "cool".
+
+<!-- -->
+
+-   Create your own rotating GIF from a point cloud
+
+    -   Make sure this is less than 50mb in size
+
+    -   Feel free to just use the example laz files provided
+
+[**Download the FCOR 599 Submission Template (.docx)**](content/firstname_lastname_fcor599_pointcloudshiny.docx)
+
+**Upload to Canvas**
+
+1.  Word document with four screenshots and your two sentences
+2.  Your own rotating GIF!
