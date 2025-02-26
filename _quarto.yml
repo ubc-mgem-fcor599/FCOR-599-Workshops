@@ -26,6 +26,8 @@ website:
           - Cartography/arcgis_pro_demo.qmd
       - text: "Shiny"
         href: Shiny/shiny.qmd
+      - text: "Report-Ready Figures in ggplot"
+        href: ggplot/MEGEM_ggplot/ggplot.qmd
       
       
           

@@ -1,7 +1,5 @@
 ---
 title: "Coding Crossover"
-format: html
-editor: visual
 authors:
   - name: Brent Murray
     degrees: MGEM
@@ -60,25 +58,39 @@ There are some key differences between Python and R that may take some time to g
 
 **R Libraries**
 
-| **Library** | **Description** |
-|----|----|
-| **`terra`** | For spatial data manipulation, raster data processing, and geospatial analysis. |
-| **`sf`** | For handling vector spatial data, including shapefiles, GeoJSON, and other formats. |
-| **`dplyr`** | For data manipulation. |
-| **`caret`** | For training and plotting classification and regression models. |
-| **`ggplot2`** | For creating graphics with provided data. |
++----------------------------------+-------------------------------------------------------------------------------------+
+| **Library**                      | **Description**                                                                     |
++==================================+=====================================================================================+
+| **`terra`**                      | For spatial data manipulation, raster data processing, and geospatial analysis.     |
++----------------------------------+-------------------------------------------------------------------------------------+
+| **`sf`**                         | For handling vector spatial data, including shapefiles, GeoJSON, and other formats. |
++----------------------------------+-------------------------------------------------------------------------------------+
+| **`dplyr`**                      | For data manipulation.                                                              |
++----------------------------------+-------------------------------------------------------------------------------------+
+| **`caret`**                      | For training and plotting classification and regression models.                     |
++----------------------------------+-------------------------------------------------------------------------------------+
+| **`ggplot2`**                    | For creating graphics with provided data.                                           |
++----------------------------------+-------------------------------------------------------------------------------------+
 
 **Python Libraries**
 
-| **Library** | **Description** |
-|----|----|
-| **`rasterio`** | For raster file I/O and processing. |
-| **`numpy`** | For numerical data manipulation, often used with raster data. |
-| **`pandas`** | For tabular data manipulation. |
-| **`geopandas`** | For handling vector spatial data, extending `pandas` to work with geospatial formats. |
-| **`shapely`** | For manipulation and analysis of geometric objects. |
-| **`scikit-learn`** | For training classification, regression, and clustering models, and data preprocessing. |
-| **`matplotlib`** | For creating graphics with provided data. |
++----------------------------------+-----------------------------------------------------------------------------------------+
+| **Library**                      | **Description**                                                                         |
++==================================+=========================================================================================+
+| **`rasterio`**                   | For raster file I/O and processing.                                                     |
++----------------------------------+-----------------------------------------------------------------------------------------+
+| **`numpy`**                      | For numerical data manipulation, often used with raster data.                           |
++----------------------------------+-----------------------------------------------------------------------------------------+
+| **`pandas`**                     | For tabular data manipulation.                                                          |
++----------------------------------+-----------------------------------------------------------------------------------------+
+| **`geopandas`**                  | For handling vector spatial data, extending `pandas` to work with geospatial formats.   |
++----------------------------------+-----------------------------------------------------------------------------------------+
+| **`shapely`**                    | For manipulation and analysis of geometric objects.                                     |
++----------------------------------+-----------------------------------------------------------------------------------------+
+| **`scikit-learn`**               | For training classification, regression, and clustering models, and data preprocessing. |
++----------------------------------+-----------------------------------------------------------------------------------------+
+| **`matplotlib`**                 | For creating graphics with provided data.                                               |
++----------------------------------+-----------------------------------------------------------------------------------------+
 
 ## Importing Libraries
 
