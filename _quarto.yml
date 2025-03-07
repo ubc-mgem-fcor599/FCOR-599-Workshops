@@ -28,6 +28,8 @@ website:
         href: Shiny/shiny.qmd
       - text: "Report-Ready Figures in ggplot"
         href: ggplot/MEGEM_ggplot/ggplot.qmd
+      - text: "Github Intro"
+        href: GitHub_workshop/GitHub_workshop/Intro_to_GitHub.qmd
       
       
           
